@@ -1,0 +1,14 @@
+ACM Website Layout--(tentative)
+1.The main page contains the ACM logo.
+2.The logo eill be divided into 4 sections 
+  (top,right,bottom,left) with each sedction 
+  being clickable and on clicking slides
+  to one of the page .
+Description Of the Pages-
+Top:About ACM(A brief introduction about ACM)
+Right:ACM International Registeration form
+Bottom:Events(past,upcoming)
+Left:Image Gallery and details of the ACM members.
+
+
+ 

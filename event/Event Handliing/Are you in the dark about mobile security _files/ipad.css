@@ -1,0 +1,37 @@
+#homepage #contentWrapper {
+    margin: 20px auto;
+    width: 100%;
+}
+#results #contentWrapper {
+    margin: 20px auto;
+    width: 100%;
+}
+#socialLinks ul {
+	margin-left:-20px!important;
+}
+#socialLinks ul li {
+	padding:0;
+}
+#pageIntro h1 {
+	width: 94.50%;
+}
+
+span#progressInfo {
+    color: #FFFFFF !important;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 135px;
+    top: 135px;
+}
+input[type=checkbox] {
+    min-width:20px;
+	min-height:20px;
+}
+
+body#eightPage span#progressInfo {
+    right: 125px;
+}
+body#eightAnswer span#progressInfo {
+    right: 125px;
+}

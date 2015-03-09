@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="scrolljs.js"></script>
+<script type="text/javascript">
+    var w = $(window).width();
+	var h= $(window).height();
+$(document).ready(function(e) {
+	var panes= document.getElementsByClassName("pane");
+	for(i=0;i<9;i++)
+	{
+	panes.item(i).style.height=h+'px';
+	panes.item(i).style.width=w+'px';
+	}
+	var handlers=document.getElementById("panehandler");
+	handlers.style.height=h+'px';
+	handlers.style.width=w+'px';
+	var handlers=document.getElementById("panecontainer");
+	handlers.style.height=h+'px';
+	handlers.style.width=3*w+'px';
+	/*$(window).scroll(function(){
+	var x = $(window).scrollTop();
+	var y = $(window).scrollLeft();
+	$('#menu').css("top",x+40);
+	$('#menu').css("left",y);
+	});*/
+	$.scrollTo('div li:eq(4)');
+	$('#teamselect').click(function(){
+$.scrollTo( $('#yellow'),800 );
+});
+$('#homeselect').click(function(){
+$('#panehandler').scrollTo( $('div li:eq(4)'),800 );
+});
+$('#sponsorselect').click(function(){
+$.scrollTo( $('div li:eq(2)'),800 );
+});
+
+}); 
+</script>
+</head>
+<style>
+@font-face
+{
+	font-family:'ksh1';
+	src:url('fonts/trebuc.ttf');
+}
+@font-face
+{
+	font-family:'ksh2';
+	src:url('fonts/trebucbd.ttf');
+}
+#banner-slide
+{
+	background-color:#1d1d1d;
+	overflow:hidden;
+}
+*{
+	margin:0;
+	padding:0;
+	font-family:"ksh1";
+}
+.slide1
+{
+	background-image:url("slides/1.jpg");
+	background-size:cover;
+}
+.slide2
+{
+	background-image:url("slides/2.jpg");
+	background-size:cover;
+}
+.slide3
+{
+	background-image:url("slides/3.jpg");
+	background-size:cover;
+}
+.toplist
+{
+	position:absolute;
+	z-index:999;
+	float:left;
+	padding:0;
+	margin-top:40px;
+	width:650px;
+	background:url("textures/bar.png");
+	list-style:none;
+}
+.toplist li
+{
+	display:inline;
+}
+.toplist li .tlinks
+{
+	font-family:"ksh2";
+	text-decoration:none;
+ width:auto;
+ color:#e8e8e8;
+ float:left;
+ font-size:200%;
+ text-align:center;
+ padding:15px;
+ padding-top:10px;
+}
+.toplist li .tlinks:hover
+{
+	color:#0050ef;
+}
+.slideheaderleft
+{
+	margin-top:200px;
+	display:inline-block;
+	font-family:"ksh2";
+	color:#e8e8e8;
+	margin-left:100px;
+	font-size:350%;
+	text-shadow: 0px 0px 10px #1d1d1d;
+	background:url('textures/bar.png');
+	padding:30px;
+}
+.slideheaderright
+{
+	margin-top:200px;
+	display:inline-block;
+	font-family:"ksh2";
+	color:#e8e8e8;
+	float:right;
+	margin-right:100px;
+	font-size:350%;
+	text-shadow: 0px 0px 10px #1d1d1d;
+	background:url('textures/bar.png');
+	padding:30px;
+}
+.endlist
+{
+	position:absolute;
+	z-index:999;
+	float:right;
+	padding:0;
+	width:auto;
+	background:url("textures/bar.png");
+	list-style:none;
+	display:inline-block;
+}
+.endlist li
+{
+	display:inline;
+}
+.endlist li .elinks
+{
+	font-family:"ksh2";
+	text-decoration:none;
+ width:auto;
+ color:#e8e8e8;
+ float:right;
+ font-size:200%;
+ text-align:center;
+ padding:15px;
+ padding-top:10px;
+}
+.endlist li .elinks:hover
+{
+	color:#0050ef;
+}
+#red
+{
+	background-color:#cc0000;
+}
+#green
+{
+	background-color:#00cc00;
+}
+#blue
+{
+	background-color:#0000cc;
+}
+#yellow
+{
+	background-color:#cccc00;
+}
+#grey
+{
+	background-color:#e8e8e8;
+}
+#black
+{
+	background-color:#222222;
+}
+#cyan
+{
+	background-color:#25a0db;
+}
+#orange
+{
+	background-color:#C30;
+}
+#white
+{
+	background-color:#f9f9f9;
+}
+.pane
+{
+	display:inline-block;
+}
+#panehandler
+{
+}
+#panecontainer li
+{
+	display:-moz-box;
+	margin:0;
+	padding:0;
+}
+#panecontainer
+{
+	list-style:none;
+}
+</style>
+<body>
+<ul class="toplist" id="menu">
+<li><a href="#" class="tlinks" id="homeselect">Home</a></li>
+<li><a href="#" class="tlinks" id="teamselect">Team</a></li>
+<li><a href="#" class="tlinks" id="sponsorselect">Our Sponsors</a></li>
+<li><a href="#" class="tlinks">Contact Us</a></li>
+</ul>
+<div id="panehandler">
+<ul id="panecontainer">
+<li><div class="pane" id="red"></div></li>
+<li><div class="pane" id="blue"></div></li>
+<li><div class="pane" id="green"></div></li>
+<li><div class="pane" id="yellow"></div></li>
+<li><div class="pane" id="grey"></div></li>
+<li><div class="pane" id="black"></div></li>
+<li><div class="pane" id="cyan"></div></li>
+<li><div class="pane" id="orange"></div></li>
+<li><div class="pane" id="white"></div></li>
+</ul>
+</div>
+</body>
+</html>

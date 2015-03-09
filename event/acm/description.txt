@@ -1,0 +1,9 @@
+
+index.php
+	-register
+	-check.php
+		-options.php[only if  author]
+			-event.php
+				-create.php
+			-edit.php
+		-view.php

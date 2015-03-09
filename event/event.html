@@ -1,0 +1,137 @@
+<?php 
+ require 'db.php';
+ if(isset($_COOKIE['user_name']))
+ {//For returning users ..
+    echo $_COOKIE['user_name'];
+    $user_name =  $_COOKIE['user_name'];
+	if($_COOKIE['desig']=="author")
+	{
+		$user = "SELECT ftime FROM users WHERE user_name='$user_name'" ;
+		$user_rows = mysql_query($user);
+		$fans = -1;
+		while($res1 = mysql_fetch_assoc($user_rows))
+		{
+			$fans = $res1['ftime']; 
+		}
+		if($fans == 1)
+		{
+			header("location:event.php");
+		}
+		else
+		{
+			header("location:options.php?user_name=$user_name");
+		}
+	}            
+	else if($_COOKIE['desig']=="member")
+	{
+	 header("location:view.php");
+	}
+ }
+ 
+ ?>
+<html>
+<style type="text/css">
+	*{margin:0;padding:0;}
+	body{
+		background:url("background.JPG");
+	}
+	@font-face{
+		font-family:catull;
+		src:url('Roboto-Condensed.ttf');
+	}
+	#navbar
+	{
+		border:1px black solid;
+		height:30px;
+	}
+	#maindiv{
+		background: url("div.png");
+		width:800px;
+		height: 500px;
+		margin:0 auto;
+		margin-top: 70px;
+		position: relative;
+		z-index: -1;
+	}
+	#signin{
+		position: absolute;
+		color: #00aeef;
+		height:30px;
+		width:200px;
+		margin-left:340px;
+		text-align: center;
+		margin-top: 70px;
+		font-size: 30px;
+		font-family: catull;
+		
+	}
+	#arrow{
+		position: absolute;
+		height: 50px;
+		width: 50px;
+		background:url("arrow.PNG");
+		margin-left: 1050px;
+		margin-top: 290px;
+	}
+	#register{
+		position: absolute;
+		width:200px;
+		height: 30px;
+		font-size: 38px;
+		float: right;
+		margin-right: 60px;
+		margin-top: 428px;
+		text-align: center;
+		font-family: catull;
+		color: #00aeef;
+		bottom:0;
+	}
+	#part1{
+		display: block;
+		width:300px;
+		height: 300px;
+		border:1px black solid;
+		position: absolute;
+		margin:0 auto;
+		margin-top:100px;
+		margin-left: 270px;
+		
+	}
+	
+</style>
+<script type="text/javascript">
+	function next()
+	{
+		document.getElementById("part1").style.display = "none";  //visible
+		document.getElementById("part2").style.display = "block";
+	}
+</script>
+<body>
+	<div id="navbar"></div>
+	<div id="signin">EVENT BASICS</div>
+	<a href="ann.html"\><div id="arrow"></div></a>
+	<div id="register"></div>
+	<div id="maindiv">
+		
+		<div id="part1">
+			<form action="create.php" method="post" >
+			<input type="hidden" name="basics" value="basics"/>
+			<h2>Name of Event:</h2><br/><input type="text" name="name" size="30" maxlength="30" /><br/>
+			<h2>Event Description:</h2><br/><textarea name="desc" rows="5" cols="60" ></textarea><br/>
+			<h2>Date:</h2><br/><input type="text" name="day" maxlength="2" size="2" placeholder="dd" />
+			                   <input type="text" name="month" maxlength="2" size="2" placeholder="mm" />
+				               <input type="text" name="year" maxlength="4" size="4" placeholder="yyyy" /><br/>
+			<h2>Time:</h2><br/><input type="text" name="hour" maxlength="2" size="2" placeholder="hr" />
+			                   <input type="text" name="min" maxlength="2" size="2" placeholder="min" />
+			<select name="meridian" >
+			<option selected>am</option>
+			<option>pm</option>
+			</select><br/>
+			<h2>Permission:</h2><br/><input type="text" name="perm" /><br />
+			<p id="green">
+			</p>
+			<br/><br/><input type="submit" name="submit" value="submit" id="submit" />
+		</form>
+	</div>
+</body>
+</html>

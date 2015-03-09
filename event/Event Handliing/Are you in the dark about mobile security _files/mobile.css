@@ -1,0 +1,1195 @@
+body {
+	background:#0D5C8D;
+	width:100%;
+	zoom:1;
+}
+#pageWrapper {
+/* display:none; */
+	margin:0;
+	width:100%;
+}
+#page {
+/* display:none; */
+	width:100%;
+	margin:40px auto;
+	padding:0;
+}
+#topQuestion {
+width:50%;
+}
+#outlawImg {
+	margin-top:40px;	
+}
+img#mainLogo {
+ position:absolute;
+ top:0;
+ left:0;
+ z-index:1111111;
+ display:block;
+ width:40%;
+ margin:0;
+}
+
+#socialLinks {
+	display:none;
+}
+
+img.testBar {
+	width:90%;
+	margin:0;
+	padding:0;
+}
+#contentWrapper #socialLinks {
+    display:none;
+}
+#headerWrapper {
+	background:#0D5C8D;
+}
+#progressBar {
+/* display:none; */
+	width:90%;
+	margin:20px;
+	padding:20px 0;
+}
+img.campaignLogo {
+/* display:none; */
+	width:35%;
+	float:right;
+	margin:-100px;
+	margin-right:-80px;
+	padding:0;
+}
+/*Content*/
+#leftColumn {
+	width:100%;
+}
+#contentWrapper {
+/* display:none; */
+	margin:0;
+	width:100%!important;
+	padding:0;
+	font-size:2em;
+	line-height:2em;
+	clear:both;
+	padding-bottom:40px;
+}
+
+#footerWrapper {
+	display:none;
+}
+
+body#eightAnswer span#progressInfo,
+body#eightPage span#progressInfo {
+    color: #FFFFFF !important;
+    font-size: 40px!important;
+    font-weight: bold;
+    position: absolute;
+    right: 65px;
+    top: 160px;
+}
+
+/*Homepage*/
+#takeTestBtn {
+    display: block;
+    height: 60px;
+    margin-left: 265px;
+    text-indent: -9999px;
+    width: 50%;
+}
+
+/*Forms*/
+#leftColumn input[type=checkbox] {
+	width:48px;
+	height:48px;
+}
+
+#formWrapper img.unlawfulAnswer {
+    height: 52px;
+    width: 52px;
+}
+
+
+#leftColumn .questionBox p {
+	font-size:1.1em!important;
+}
+#formWrapper label {
+/* 	font-size:1em; */
+	margin:0!important;
+	padding:0!important;
+
+}
+
+/*Questions*/
+
+span#pageNumber {
+	display:none;
+}
+#introText p {
+	padding-top:40px;
+	padding-left:0;
+	background:none;
+	font-size:1.2em!important;
+}
+#introText strong {
+	font-size:0.875em;
+}
+
+#pageIntro h1 {
+	font-size:32px;
+	height:60px;
+}
+body#firstAnswer #formWrapper {
+	width:100%!important;
+	padding:0!important;
+	margin:0!important;
+	overflow:hidden;
+}
+#leftColumn .answerBox img.tickedBox {
+    display: inline;
+    height: 52px!important;
+    width: 52px!important;
+}
+#leftColumn .answer img.tickedBox {
+    display: inline;
+    height: 52px!important;
+    width: 52px!important;
+}
+#leftColumn .questions img.tickedBox {
+    display: inline;
+    height: 52px!important;
+    width: 52px!important;
+}
+
+body#fifthAnswer input.secondPageQuestions {
+    height: 52px!important;
+    width: 52px!important;
+}
+
+#formWrapper #leftColumn {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom:20px;
+}
+
+input.firstPageQuestions {
+    margin-bottom: 5px;
+    margin-left: -25px;
+    margin-top:20px;
+}
+
+
+
+.questionBox {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+    margin-left:60px;
+    width:100%;
+}
+
+/*Answers*/
+.answerBox {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+    margin-left:80px;
+    width:100%;
+}
+body#thirdAnswer #leftColumn .questions label {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+    margin-left:140px!important;
+/*     color:red!important; */
+    width:200%;
+}
+body#fourthAnswer #leftColumn .questions label {
+     margin-left:140px!important;
+}
+body#fifthAnswer #leftColumn .questions label {
+     margin-left:140px!important;
+}
+body#fifthAnswer #leftColumn .questions label {
+     margin-left:140px!important;
+}
+#tipBox {
+	padding:0!important;
+	width:100%!important;
+	margin:0!important;
+	margin-top:40px;
+}
+#tipBox p {
+	width:80%;
+	margin:0 auto;
+	font-size:24px!important;
+	line-height:40px;
+	color:#452468;
+}
+#tipBox h2 {
+	padding:20px;
+	margin-left:80px;
+	font-size: 3em;
+}
+#tipBox h3 {
+	padding:20px;
+	margin-left:80px;
+	font-size: 32px;
+}
+#tipBox .pageScore {
+    color: #CA3793;
+    font-family: 'Droid Sans',Verdana,Arial,sans-serif;
+    font-size: 48px!important;
+    font-weight: bold;
+    line-height: 48px;
+    margin-left:100px;
+    padding: 0;
+    margin-bottom:40px;
+}
+#firstAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question1.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+
+#secondAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question2.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#thirdAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question3.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#fourthAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question4.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#fourthAnswer #tipBox p {
+	font-size:2.5em!important;
+	line-height:2em;
+}
+#fifthAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question5.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#sixthAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question6.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#seventhAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question7.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#eightAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question8.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+ #tipBox p {
+	font-size:2.5em!important;
+	line-height:2em;
+}
+
+/*fix 2 lines problem in questions*/
+#formWrapper .questionBox {
+	width:125%;
+}
+
+body#sixthPage #formWrapper .questionBox {
+	width:200%;
+	padding:20px 0;
+	margin-top:-100px!important;
+}
+body#sixthAnswer #formWrapper .answerBox {
+	width:200%;
+	padding:20px 0;
+	margin-top:-100px!important;
+	margin-left:140px;
+}
+body#seventhPage #formWrapper .questions label {
+	width:200%;
+	padding:40px 0;
+	margin-top:-100px!important;
+}
+body#seventhAnswer #formWrapper .questions label {
+	width:200%;
+	padding:40px 0;
+	margin-top:-100px!important;
+	margin-left:140px;
+}
+body#seventhPage #formWrapper p.questions label {
+	padding:20px 0!important;
+}
+body#seventhAnswer #formWrapper p.questions  label {
+	margin-left:140px!important;
+}
+body#seventhAnswer #introText p {
+	font-size:inherit;
+}
+body#seventhAnswer #introText p {
+	font-size:38px!important;
+	display:block;
+	margin-bottom:40px;
+}
+body#seventhAnswer #formWrapper label {
+    font-size: 32px!important;
+    padding-top:10px!important
+}
+body#eightPage #introText p {
+		margin-bottom:40px;
+}
+#eightAnswer #leftColumn {
+    margin-left: 120px!important;
+    width:50%!important;
+}
+#eightAnswer #formWrapper p {
+/* 	display:none; */
+/* 	width:100%!important; */
+}
+#eightAnswer .answerBox p {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+    margin-left:140px;
+}
+#eightAnswer .answerBox {
+	padding: 0!important;
+	margin:0!important;
+}
+#eightAnswer .answerBox {
+	width:50%!important;
+}
+#eightAnswer .answer {
+	width:50%!important;
+}
+
+body#eightPage  {
+	overflow:hidden;
+}
+body#eightPage .questionBox {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+/*     margin-left:80px; */
+    padding:10px 0;
+}
+#eightAnswer .answer {
+	/* width:100%; */
+}
+body#eightAnswer #introText p {
+		margin-bottom:40px;
+}
+
+#formWrapper .questions label {
+	width:200%;
+}
+
+
+/*Answer Button*/
+#submitAnswer input {
+    background: url("/inthedark/app/img/mobile/m-btn-answer.png") no-repeat scroll 0 0 transparent !important;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 0!important;
+    height: 66px!important;
+    margin-left: 60px;
+    width: 340px!important;
+}
+
+#nextBtn img {
+	display:none;
+}
+#nextBtn {
+    display: block;
+    margin-bottom: 40px;
+}
+#nextBtn a {
+	z-index:120000;
+    background: url("/inthedark/app/img/mobile/m-btn-next-question.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 66px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+    width: 340px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+/*Label Options*/
+#leftColumn label {
+    color: #452468;
+    display: block;
+    margin-top: -80px !important;
+    position: relative;
+    margin-bottom:40px!important;
+    margin-left:60px !important;
+/*     color:red!important; */
+    width:140%;
+    font-size:1.1em!important;
+}
+
+#leftColumn .answerBox label {
+/*
+    margin-left:90px !important;
+    color:red!important;
+*/
+    margin-left:150px!important;;
+
+}
+#formWrapper form {
+	margin-top:20px;
+}
+
+/*Third question*/
+body#thirdPage #leftColumn {
+  /*
+  margin-left: 0!important;
+    width: 100%!important;
+*/
+}
+
+body#secondPage #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-left: 70px!important;
+    margin-top: -20px;
+    margin-left:-50px;
+    padding-left:-40px;
+}
+#introText p {
+    margin-left: 70px !important;
+}
+#pageIntro h1 {
+	font-size:40px!important;
+	padding-bottom:10px!important;
+}
+body#results #pageWrapper #resultsWrapper {
+	width:100%!important;
+	margin:0;
+}
+#resultsWrapper {
+	width:100%!important;
+	margin:0;
+	padding:0;
+	display:block;
+	max-width:100%;
+}
+body#results #leftColumn {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0 0 0 40px;
+    padding-top: 0;
+    width: 55%;
+    font-size:2em;
+    line-height:2em;
+}
+body#results #resultBox {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-left: 20px;
+    margin-right: 0;
+    position: relative;
+    width: 35%;
+}
+#resultNumber p {
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Droid Sans',Verdana,Arial,sans-serif;
+    font-size: 5em;
+    left: 100px;
+    line-height: 5em;
+    position: absolute;
+    text-shadow: 1px 3px 3px #4D2874;
+    top: 80px;
+}
+ul#resultsTipsList li {
+    background: url("/inthedark/app/img/mobile/icon-list.png") no-repeat scroll 0 30px transparent;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#pageIntro {
+	display:block;
+	width:100%;
+	height:2em;
+	background: none repeat scroll 0 0 #CA3793;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+#pageIntro h1 {
+    color: #FFFFFF;
+    font-size: 18px;
+    height: 25px;
+    left: 0;
+    line-height: 1.5em;
+    padding: 5px 3% 10px;
+    position: absolute;
+    top: 0;
+}
+div#formWrapper div#introText {
+	margin-bottom:30px!important;
+}
+
+#tipBox h3 {
+    font-size:3em!important;
+}
+h3#finalScoreInfo {
+    font-size:1.8em!important;
+    line-height:1.5em;
+}
+
+#leftColumn h2.resultHeading {
+    font-size:1.1em!important;
+        line-height:1.4em;
+}
+
+#testFeedback p {
+    color: #CA3793;
+    float: left;
+    font-size: 12px;
+    padding: 0 5px;
+    width: 100%;
+    font-size:1.1em!important;
+}
+.feedbackBtn {
+    background: none repeat scroll 0 0 #4D2875;
+    border: 1px solid #3C1F5C;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    display:inline-block;
+    width:40%;
+	height:2em;
+    margin:10px;
+}
+.feedbackBtn a {
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height:1.5em;
+    margin:0 auto;
+    text-decoration: none;
+    width:30%;
+    display:block;
+ 
+}
+body#results #challangeBoxes .resultHeading {
+    font-size: 2em!important;
+    padding:20px 0;
+}
+
+li.challangeBox {
+    display: block;
+    margin: 10px 20px;
+    min-height: 180px;
+    width: 100%!important;
+}
+
+.challangeBox img {
+	float:left;
+	margin-right:40px;
+}
+
+.challangeBox p {
+	float:left;
+	font-size: 2em!important;
+}
+
+p.campaingInfo {
+    color: #402262;
+    padding: 0 5px;
+    line-height:2em;
+    font-size: 2em!important;
+    float:left;
+    width: 60%!important;
+}
+
+#moreTipsKnowthenet img {
+	width:100%;
+	margin:60px 0;
+}
+body#results #resultBox img {
+    margin: 20px auto;
+    width:80%;
+}
+#shareBtn img {
+    display: block;
+    margin: 40px 0;
+    padding: 20px 0;
+    width:100%;
+    height:54px;
+}
+/*Forms*/
+#leftColumn input[type=checkbox] {
+	width:52px;
+	height:52px;
+}
+
+input[type=checkbox] {
+    min-width:52px!important;
+	min-height:52px!important;
+}
+
+#formWrapper img.unlawfulAnswer {
+    height: 52px;
+    width: 52px;
+}
+
+#pageIntro h1 {
+	width: 94.50%;
+}
+body {
+	background:#0D5C8D;
+	width:100%;
+	zoom:100%;
+}
+#pageWrapper {
+/* display:none; */
+	margin:0;
+	width:100%;
+}
+#page {
+/* display:none; */
+	width:100%;
+	margin:40px auto;
+	padding:0;
+}
+#topQuestion {
+width:50%;
+}
+#outlawImg {
+	margin-top:40px;	
+}
+img#mainLogo {
+ position:absolute;
+ top:0;
+ left:0;
+ z-index:1111111;
+ display:block;
+ width:40%;
+ margin:0;
+}
+
+#socialLinks {
+	display:none;
+}
+
+img.testBar {
+	width:90%;
+	margin:0;
+	padding:0;
+}
+#contentWrapper #socialLinks {
+    display:none;
+}
+#headerWrapper {
+	background:#0D5C8D;
+}
+#progressBar span#progressInfo {
+    color: #FFFFFF !important;
+    font-size: 40px!important;
+    font-weight: bold;
+    position: absolute;
+    right: 95px;
+    top: 150px;
+}
+
+#progressBar {
+/* display:none; */
+	width:90%;
+	margin:20px;
+	padding:20px 0;
+}
+img.campaignLogo {
+/* display:none; */
+	width:35%;
+	float:right;
+	margin:-100px;
+	margin-right:-80px;
+	padding:0;
+}
+/*Content*/
+#leftColumn {
+	width:100%;
+}
+#contentWrapper {
+/* display:none; */
+	margin:0;
+	width:100%!important;
+	padding:0;
+	font-size:2em;
+	line-height:2em;
+	clear:both;
+	padding-bottom:40px;
+}
+
+#footerWrapper {
+	display:none;
+}
+
+
+/*Homepage*/
+#takeTestBtn {
+    display: block;
+    height: 60px;
+    margin-left: 265px;
+    text-indent: -9999px;
+    width: 50%;
+}
+
+/*Forms*/
+#leftColumn input[type=checkbox] {
+	width:52px;
+	height:52px;
+}
+
+input[type=checkbox] {
+    min-width:52px;
+	min-height:52px;
+}
+
+#formWrapper img.unlawfulAnswer {
+    height: 52px;
+    width: 52px;
+}
+
+#leftColumn .questionBox p {
+	font-size:1.1em!important;
+}
+#formWrapper label {
+/* 	font-size:1em; */
+	margin:0!important;
+	padding:0!important;
+
+}
+
+/*Questions*/
+
+span#pageNumber {
+	display:none;
+}
+#introText p {
+	padding-top:40px;
+	padding-left:0;
+	background:none;
+	font-size:1.2em!important;
+}
+#introText strong {
+	font-size:0.875em;
+}
+
+#pageIntro h1 {
+	font-size:32px;
+	height:60px;
+}
+body#firstAnswer #formWrapper {
+	width:100%!important;
+	padding:0!important;
+	margin:0!important;
+	overflow:hidden;
+}
+#leftColumn .answerBox img.tickedBox {
+    display: inline;
+    height: 52px!important;
+    width: 52px!important;
+}
+#leftColumn .answer img.tickedBox {
+    display: inline;
+    height: 52px!important;
+    width: 52px!important;
+}
+#leftColumn .questions img.tickedBox {
+    display: inline;
+    height: 52px!important;
+    width: 52px!important;
+}
+
+body#fifthAnswer input.secondPageQuestions {
+    height: 52px!important;
+    width: 52px!important;
+}
+
+#formWrapper #leftColumn {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom:20px;
+}
+
+input.firstPageQuestions {
+    margin-bottom: 5px;
+    margin-left: -25px;
+    margin-top:20px;
+}
+
+.questionBox {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+    margin-left:60px;
+    width:100%;
+}
+
+/*Answers*/
+.answerBox {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+    margin-left:80px;
+    width:100%;
+}
+body#thirdAnswer #leftColumn .questions label {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+    margin-left:140px!important;
+/*     color:red!important; */
+    width:200%;
+}
+body#fourthAnswer #leftColumn .questions label {
+     margin-left:140px!important;
+}
+body#fifthAnswer #leftColumn .questions label {
+     margin-left:140px!important;
+}
+body#fifthAnswer #leftColumn .questions label {
+     margin-left:140px!important;
+}
+#tipBox {
+	padding:0!important;
+	width:100%!important;
+	margin:0!important;
+	margin-top:40px;
+}
+#tipBox p {
+	width:80%;
+	margin:0 auto;
+	font-size:24px!important;
+	line-height:40px;
+	color:#452468;
+}
+#tipBox h2 {
+	padding:20px;
+	margin-left:80px;
+	font-size: 3em;
+}
+#tipBox h3 {
+	padding:20px;
+	margin-left:80px;
+	font-size: 32px;
+}
+#tipBox .pageScore {
+    color: #CA3793;
+    font-family: 'Droid Sans',Verdana,Arial,sans-serif;
+    font-size: 48px!important;
+    font-weight: bold;
+    line-height: 48px;
+    margin-left:100px;
+    padding: 0;
+    margin-bottom:40px;
+}
+#firstAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question1.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+
+#secondAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question2.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#thirdAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question3.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#fourthAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question4.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#fifthAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question5.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#sixthAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question6.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#seventhAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question7.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+#eightAnswer #tipBox {
+    background: url("/inthedark/app/img/mobile/Question8.png") no-repeat scroll 80% 2% #FFFFFF;
+    box-shadow: 1px 1px 1px #9FA3B0;
+    display: block;
+    opacity: 0;
+    padding: 3%;
+    position: relative;
+    margin: -2px 0 100px 0!important;
+}
+
+
+/*fix 2 lines problem in questions*/
+#formWrapper .questionBox {
+	width:125%;
+}
+
+body#sixthPage #formWrapper .questionBox {
+	width:200%;
+	padding:20px 0;
+	margin-top:-100px!important;
+}
+body#sixthAnswer #formWrapper .answerBox {
+	width:200%;
+	padding:20px 0;
+	margin-top:-100px!important;
+	margin-left:140px;
+}
+body#seventhPage #formWrapper .questions label {
+	width:200%;
+	padding:40px 0;
+	margin-top:-100px!important;
+}
+body#seventhAnswer #formWrapper .questions label {
+	width:200%;
+	padding:40px 0;
+	margin-top:-100px!important;
+	margin-left:140px;
+}
+body#seventhPage #formWrapper p.questions label {
+	padding:20px 0!important;
+}
+body#seventhAnswer #formWrapper p.questions  label {
+	margin-left:140px!important;
+}
+body#seventhAnswer #introText p {
+	font-size:inherit;
+}
+body#seventhAnswer #introText p {
+	font-size:38px!important;
+	display:block;
+	margin-bottom:40px;
+}
+body#seventhAnswer #formWrapper label {
+    font-size: 32px!important;
+    padding-top:10px!important
+}
+body#eightPage #introText p {
+		margin-bottom:40px;
+}
+#eightAnswer #leftColumn {
+    margin-left: 120px!important;
+    width:50%!important;
+}
+#eightAnswer #formWrapper p {
+/* 	display:none; */
+/* 	width:100%!important; */
+}
+#eightAnswer .answerBox p {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+    margin-left:140px;
+}
+#eightAnswer .answerBox {
+/* 	width:100%!important; */
+	padding: 0!important;
+	margin:0!important;
+}
+#eightAnswer .answerBox {
+/* 	margin-left:120px!important; */
+	width:50%!important;
+}
+#eightAnswer .answer {
+	width:50%!important;
+/*
+	padding: 0!important;
+	margin:0!important;
+*/
+}
+
+body#eightPage  {
+	overflow:hidden;
+}
+body#eightPage .questionBox {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -90px;
+    position: relative;
+/*     margin-left:80px; */
+    padding:10px 0;
+}
+#eightAnswer .answer {
+	/* width:100%; */
+}
+body#eightAnswer #introText p {
+		margin-bottom:40px;
+}
+
+#formWrapper .questions label {
+	width:200%;
+}
+
+
+/*Answer Button*/
+#submitAnswer input {
+    background: url("/inthedark/app/img/mobile/m-btn-answer.png") no-repeat scroll 0 0 transparent !important;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 0!important;
+    height: 66px!important;
+    margin-left: 60px;
+    width: 340px!important;
+}
+
+#nextBtn img {
+	display:none;
+}
+#nextBtn {
+    display: block;
+    margin-bottom: 40px;
+}
+#nextBtn a {
+	z-index:120000;
+    background: url("/inthedark/app/img/mobile/m-btn-next-question.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 66px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+    width: 340px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+/*Label Options*/
+#leftColumn label {
+    color: #452468;
+    display: block;
+    margin-top: -80px !important;
+    position: relative;
+    margin-bottom:40px!important;
+    margin-left:60px !important;
+/*     color:red!important; */
+    width:140%;
+    font-size:1.1em!important;
+}
+
+#leftColumn .answerBox label {
+/*
+    margin-left:90px !important;
+    color:red!important;
+*/
+    margin-left:150px!important;
+
+}
+#formWrapper form {
+	margin-top:20px;
+}
+
+/*Third question*/
+body#thirdPage #leftColumn {
+  /*
+  margin-left: 0!important;
+    width: 100%!important;
+*/
+}
+
+#page #tipBox p {
+	font-size:2.5em!important;
+	line-height:2em!important;
+}
+
+body#sixthPage .questionBox p,
+body#sixthAnswer .questionBox p,
+body#firstPage .questionBox p,
+body#firstAnswer .questionBox p {
+    font-size: 1.2em!important;
+}

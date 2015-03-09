@@ -1,0 +1,1863 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a {
+    outline: none;
+    cursor: pointer;
+}
+a img {
+    border: 0;
+}
+img {
+    display: block;
+}
+ul {
+    list-style-type: none;
+}
+.hidden {
+    display: none;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.top {
+    margin-top: 0!important;
+}
+.clear {
+    clear: both;
+}
+legend {
+    display: none;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+body {
+    background: #f2f2f2 url('/inthedark/app/img/bg.jpg') 0 0 repeat;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 18px;
+}
+#page {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('/inthedark/app/fonts/pt_sans-web-bold-webfont.eot');
+    src: url('/inthedark/app/fonts/pt_sans-web-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/inthedark/application/fonts/pt_sans-web-bold-webfont.woff') format('woff'), url('/inthedark/application/fonts/pt_sans-web-bold-webfont.ttf') format('truetype'), url('/inthedark/app/fonts/pt_sans-web-bold-webfont.svg#Droid Sans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#headerWrapper {
+    display: block;
+    margin: 0 auto;
+    background:url('/inthedark/app/img/mobile/bg-top.png') 0 0 no-repeat;
+    height:56px;
+    margin-bottom:-1px;
+}
+#topQuestion {
+    display: block;
+    width: 427px;
+    height: 37px;
+}
+#progressBar {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+#contentWrapper {
+	max-width:1000px;
+	margin:20px auto;
+}
+#contentWrapper #socialLinks {
+    display: block;
+    height: 20px;
+    margin: 0;
+}
+#socialLinks {
+ display: block;
+    height: 20px;
+    width: 42%;
+}
+#page #socialLinks {
+    display: block;
+    width: 430px;
+    height: 20px;
+}
+#socialLinks ul {
+    width: 430px;
+}
+#socialLinks ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+#riskImg {
+    display: block;
+    margin: 40px auto;
+}
+
+p#line {
+	height:1px;
+	margin:0 40px 0px 40px;
+	width:90%;
+	display:block;
+	background:#0b5989;
+}
+#resultsWrapper {
+	background: #fff;
+    max-width: 720px;
+    *width:720px;
+    margin:0 auto 40px auto;
+    margin-top:0;
+    padding-top:40px;
+}
+#resultsInfo {
+/*     width: 430px; */
+	width:100%;
+    margin: 20px auto;
+    font-size: 0.875em; /*14px*/
+}
+#resultsInfo p, #resultsInfo a {
+    line-height: 30px;
+}
+#resultsInfo ul#usefullLinks {
+    display: block;
+    margin: 5px 0 0 15px;
+}
+#resultsInfo #usefullLinks li {
+    list-style: disc;
+    padding: 5px;
+}
+#resultsInfo #usefullLinks a {
+    color: #000;
+    text-decoration: none;
+}
+#resultsInfo #usefullLinks a:hover {
+    text-decoration: underline;
+    color: #452468;
+}
+
+#resultsWrapper #leftColumn {
+    width: 420px;
+}
+
+#challangeBoxes {
+	width:100%;
+	display:block;
+	margin:10px 20px 20px 20px;
+}
+li.challangeBox {
+	display:block;
+	min-height:180px;
+	width:116px;
+	margin:0 20px;
+}
+
+.campaingInfo {
+	font-size:12px;
+	 color: #402262;
+	 padding:5px;
+}
+body#results #rightColumn {
+    width: 320px;
+}
+
+body#firstAnswer #rightColumn, body#sixthAnswer #rightColumn, body#eightAnswer #rightColumn {
+    margin-top: 47px;
+}
+input[type=checkbox] {
+    min-width:20px;
+	min-height:20px;
+}
+
+input.firstPageQuestions {
+    margin-left: -25px;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
+}
+input.sixPageQuestions {
+    margin-left: -25px;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
+}
+#formWrapper label {
+    font-size: 12px;
+    color: #d73232;
+}
+.twitterLogo {
+    margin-right: 75px;
+}
+body#firstPage #leftColumn {
+    margin-left: 70px;
+}
+#rightColumn .largeImage {
+    margin: 20px 0;
+    -webkit-box-shadow: 1px 2px 7px #bbb;
+    -moz-box-shadow: 1px 2px 7px #bbb;
+    box-shadow: 1px 2px 7px #bbb;
+}
+#rightColumn .smallImg {
+    margin: 20px;
+    -webkit-box-shadow: 1px 2px 7px #bbb;
+    -moz-box-shadow: 1px 2px 7px #bbb;
+    box-shadow: 1px 2px 7px #bbb;
+}
+#rightColumn h4.imgText {
+    margin: 20px 0 0 60px;
+    margin-bottom: 0;
+}
+#rightColumn img.imgWithText {
+    margin-top: 0;
+    margin-left: 60px!important;
+    -webkit-box-shadow: 1px 2px 7px #bbb;
+    -moz-box-shadow: 1px 2px 7px #bbb;
+    box-shadow: 1px 2px 7px #bbb;
+}
+#welcomeBox img.introTicks {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+li.greenTick {
+    display: block;
+    height: 25px;
+    background: url('/inthedark/app/img/icons/icon-correct-green.png') 0 -2px no-repeat;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+li.purpleTick {
+    display: block;
+    height: 25px;
+    background: url('/inthedark/app/img/icon-selected-purple.png') 0 -2px no-repeat;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+li.redTick {
+    display: block;
+    height: 25px;
+    background: url('/inthedark/app/img/icons/icon-wrong-cross-red.png') 0 0 no-repeat;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+input.secondPageQuestions {
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+body#secondPage #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+body#secondAnswer #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+body#secondPage .questions {
+    margin: 20px 0;
+}
+body#secondPage #leftColumn {
+    width: 360px;
+    margin-left: 52px;
+    padding-top:0;
+}
+body#secondAnswer #leftColumn {
+    padding-top:0;
+}
+body#secondAnswer .questions {
+    margin: 20px 0;
+}
+input.thirdPageQuestions {
+    margin-left: -27px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+body#secondAnswer #formWrapper p {}
+body#thirdPage #formWrapper label, body#thirdAnswer #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+body#thirdAnswer #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+body#thirdPage .questions {
+    margin: 20px 0;
+}
+body#thirdPage #leftColumn {
+    width: 400px;
+    margin-left: 65px;
+}
+body#thirdPage #rightColumn {
+    width: 340px;
+}
+body#thirdPage .questions {
+    margin: 20px 0;
+}
+body#thirdAnswer #leftColumn {
+    width: 360px;
+    margin-left: 20px;
+}
+body#thirdAnswer .questions {
+    margin: 20px 0;
+}
+input.fourthPageQuestions {
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+}
+body#fourthPage #formWrapper label, 
+body#fourthAnswer #formWrapper label,
+body#seventhPage #formWrapper label  {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -22px;
+    margin-left: 10px;
+}
+body#fourthAnswer #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -22px;
+    margin-left: 60px;
+}
+body#fourthPage .questions {
+    margin: 20px 0;
+}
+body#fourthPage #leftColumn {
+    width: 360px;
+    margin-left: 65px;
+}
+body#fourthPage #rightColumn {
+    width: 420px;
+}
+body#fourthPage .questions {
+    margin: 15px 0;
+}
+body#fourthAnswer #leftColumn {
+    width: 370px;
+    margin-left: 20px;
+}
+body#fourthAnswer .questions {
+    margin: 15px 0;
+}
+input.fifthPageQuestions {
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+}
+body#fifthPage #formWrapper label, body#fifthAnswer #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+body#fifthAnswer #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+body#fifthPage .questions {
+    margin: 15px 0;
+}
+body#fifthPage #leftColumn {
+    width: 360px;
+    margin-left: 65px;
+}
+body#fifthPage #rightColumn {
+    width: 420px;
+}
+body#fifthPage #formWrapper label {
+    font-size: 14px;
+    color: #452468;
+}
+body#fifthPage .questions {
+    margin: 15px 0;
+}
+body#fifthAnswer .questions {
+    margin: 15px 0;
+}
+body#fifthAnswer #leftColumn {
+    width: 360px;
+    margin-left: 20px;
+}
+body#fifthPage #submitAnswer {
+	padding-top:10px;
+}
+#sixthPage #leftColumn {
+    width: 360px;
+    margin-left: 65px;
+}
+body#sixthAnswer #leftColumn {
+    width: 360px;
+    margin-left: 20px;
+}
+input.sevenPageQuestions {
+    margin-left: -25px;
+    width: 20px;
+    height: 20px;
+}
+body#seventhAnswer #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -22px;
+    margin-left: 60px;
+}
+body#seventhPage #leftColumn {
+    width: 380px;
+    margin-left: 65px;
+}
+body#seventhAnswer #leftColumn {
+    width: 380px;
+    margin-left: 35px;
+}
+body#seventhPage #rightColumn {
+    width: 400px;
+}
+body#seventhPage #formWrapper label {
+    font-size: 14px;
+    color: #452468;
+}
+body#seventhAnswer #formWrapper {
+    font-size: 14px;
+    color: #452468;
+}
+body#seventhPage .questions, body#seventhAnswer .questions {
+    margin: 15px 0;
+}
+input.eightPageQuestions {
+    margin-left: -20px;
+    width: 18px;
+    height: 18px;
+}
+#eightPage #rightColumn {
+    margin: 20px 0;
+}
+body#eightAnswer img.tickedBox {
+    display: inline;
+    height: 20px;
+    margin-left: -22px;
+    width: 20px;
+} 
+body#eightPage #leftColumn {
+    width: 320px;
+    margin: 20px 0 20px 65px;
+}
+body#eightPage span#progressInfo {
+    right: 146px;
+}
+body#eightAnswer span#progressInfo {
+    right: 146px;
+}
+input.ninthPageQuestions {
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+}
+body#ninthPage #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+body#ninthAnswer #formWrapper label {
+    color: #452468;
+    display: block;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+body#ninthPage .questions {
+    margin: 20px 0;
+}
+body#ninthPage #leftColumn {
+    width: 370px;
+    margin-left: 65px;
+}
+body#ninthPage #rightColumn {
+    width: 420px;
+}
+body#ninthPage #formWrapper label {
+    font-size: 14px;
+    color: #452468;
+}
+body#ninthPage .questions {
+    margin: 20px 0;
+}
+body#ninthAnswer .questions {
+    margin: 20px 0;
+}
+body#ninthAnswer #leftColumn {
+    width: 400px;
+}
+body#results #page {
+    min-height: 860px;
+}
+#resultsInfo p {
+    padding: 5px 0;
+    font-size: 0.875em; /*14px*/
+}
+#shareBtn img {
+    display: block;
+    margin: 20px 0;
+}
+{
+    display: block;
+    width: 255px;
+    margin: 20px auto;
+}
+#nextBtn {
+    display: block;
+/*     background: url('/inthedark/app/img/mobile/bg-btn.png') 0 0 no-repeat; */
+    width: 175px;
+    height: 34px;
+/*
+    text-indent: -9999px;
+    font-size: 0;
+*/
+    border: none;
+    cursor: pointer;
+    margin-left:135px;
+    color:#fff;
+    font-size:18px;
+    margin-bottom:20px;
+    margin-top:10px;
+}
+
+.answerPages #nextBtn {
+    display: block;
+    background: url('/inthedark/app/img/mobile/bg-btn.png') 0 0 no-repeat;
+    width: 175px;
+    height: 34px;
+/*
+    text-indent: -9999px;
+    font-size: 0;
+*/
+    border: none;
+    cursor: pointer;
+    margin-left:85px;
+    color:#fff;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+p.headerInfo {
+    padding: 10px 0;
+/*     background: url('/inthedark/app/img/bg-result-heading.png') 0 bottom repeat-x; */
+    margin: 10px;
+/*     height: 32px; */
+}
+#tipBox .headerInfo img {
+    display: block;
+    height: 24px;
+    margin-top: 5px;
+}
+#tipBox .pageScore {
+/*
+    float: right;
+    clear: both;
+*/
+/*     padding: 15px 10px; */
+    font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+    color: #452468;
+    font-size: 18px;
+    height: 18px;
+    padding:0;
+    margin:0;
+}
+
+#welcomeBox h2.beforeStart {
+    background: url('/inthedark/app/img/pic-text-before-start.png') 0 0 no-repeat;
+    width: 290;
+    height: 31px;
+    display: block;
+    text-indent: -9999px;
+    font-height: 0;
+    margin-bottom: 5px;
+}
+#welcomeBox {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'PTSansRegular', Verdana, Arial, sans-serif;
+    color: #452468;
+    background: none repeat scroll 0 0 #fff;
+    bottom: 250px;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    display: block;
+    margin-top: 20px;
+    height: 340px;
+    opacity: 0;
+    position: absolute;
+    right: 300px;
+    width: 510px;
+}
+#welcomeBox p {
+    padding: 8px 10px;
+}
+span.colorText {
+    font-weight: bold;
+    color: #75299d;
+}
+#welcomeBox ul {
+    margin: 10px 0 5px 0;
+}
+#welcomeBoxClose {
+    position: absolute;
+    right: 4px;
+    bottom: 320px;
+    background: url('/inthedark/app/img/icons/icon-close-purple.png') 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    text-height: 0;
+    border: none;
+    text-decoration: none;
+    display: block;
+}
+#welcomeBox h2 {
+    line-height: 20px;
+    margin: 10px 0 0 10px;
+}
+#welcomeBox img {
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+#termsConditionsBoxClose {
+    position: absolute;
+    right: 4px;
+    bottom: 280px;
+    background: url('/inthedark/app/img/icons/icon-close-purple.png') 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    text-height: 0;
+    border: none;
+    text-decoration: none;
+    display: block;
+}
+#termsConditionsBox {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'PTSansRegular', Verdana, Arial, sans-serif;
+    color: #452468;
+    background: none repeat scroll 0 0 #fff;
+    bottom: 20px;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    display: block;
+    margin-top: 20px;
+    height: 300px;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 510px;
+}
+
+#thankYouBoxClose {
+    position: absolute;
+    right: -13px;
+    top: -13px;
+    background: url('/inthedark/app/img/icons/icon-close-purple.png') 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    text-height: 0;
+    border: none;
+    text-decoration: none;
+    display: block;
+}
+#thankYouBox {
+    font-size: 18px;
+    line-height: 20px;
+    background: none repeat scroll 0 0 #fff;
+    bottom: 20px;
+    display: block;
+    margin-top: 20px;
+    height: 60px;
+    display: none;
+    position: absolute;
+    right: 240px;
+    top:-580px;
+    width: 240px;
+    border:2px solid #7E36A2;
+    border-radius: 5px;
+    background:#fff;
+}
+
+#jargonBusterBoxClose {
+    position: absolute;
+    right: 4px;
+    bottom: 475px;
+    background: url('/inthedark/app/img/icons/icon-close-purple.png') 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    text-height: 0;
+    border: none;
+    text-decoration: none;
+    display: block;
+}
+#jargonBusterBox {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'PTSansRegular', Verdana, Arial, sans-serif;
+    color: #452468;
+    background: none repeat scroll 0 0 #fff;
+    bottom: 10px;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    display: block;
+    margin-top: 20px;
+    min-height: 300px;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%}
+.jargonBuster {
+    display: block;
+    width: 525px;
+    padding: 0 10px 10px 10px;
+}
+#jargonBusterBox span.sectionTitle {
+    display: block;
+    font-family: 'PTSansRegular', Verdana, Arial, sans-serif;
+    font-weight: bold;
+    padding: 5px 0;
+}
+#jargonBusterBox h2, #termsConditionsBox h2 {
+    padding: 9px 9px 0 9px;
+}
+#jargonBusterBox p, #termsConditionsBox p {
+    padding: 9px;
+}
+a#takeTest {
+    width: 205px;
+    height: 38px;
+    background: url('/inthedark/app/img/hp-take-test-btn-small.png') 0 0 no-repeat;
+    text-indent: -9999px;
+    text-height: 0;
+    border: none;
+    text-decoration: none;
+    display: block;
+    margin: 5px auto;
+}
+input.seventhAnswer {
+    height: 20px;
+    margin-left: -20px;
+    padding: 5px;
+    width: 20px;
+}
+body#seventhAnswer #formWrapper #tipBox {
+    margin: 0 20px;
+}
+#tipBox ul {
+    display: block;
+    margin: 5px 25px;
+    width: 285px;
+}
+#tipBox ul li {
+    list-style: disc;
+    padding: 5px 0;
+}
+#tipBox .toptips {
+    color: #521f6d;
+    padding-top: 0!important;
+}
+#tipBox .toptips a {
+    color: #68278c;
+}
+#tipBox h2, #tipBox h3 {
+    padding: 0 10px 0 10px;
+    margin: 0;
+    line-height: 20px;
+}
+#tipBox a {
+    color: #68278c;
+}
+#tipBox a:hover {
+    color: #ac63d3;
+}
+#tipBox .advice {
+    padding-top: 0;
+    margin-top:10px;
+}
+img.tickedBox {
+    display: inline;
+    margin-left: -27px;
+    width: 20px;
+    height: 20px;
+}
+.tickAll {
+    font-weight: bold;
+}
+div#adviceWrapper {
+    position: relative;
+/*
+    width: 100%;
+    min-height:100px;
+*/
+    display: block;
+}
+
+body#dashboard {
+    background: #efefef url('/inthedark/app/img/bg-dashboard.jpg') 0 0 repeat;
+}
+#dashboardWrapper {
+    width: 1000px;
+    margin: 20px auto;
+}
+body#dashboard #dashboardWrapper {
+    border: 1px solid #ccc;
+    -moz-border-radius: 4px;
+}
+#dashboardWrapper p {
+    padding: 10px;
+    color: #452468;
+    font-size: 12px;
+}
+#dashboardWrapper #loginForm {
+    width: 240px;
+    margin: 200px auto;
+    border: 1px solid #ccc;
+    -moz-border-radius: 4px;
+}
+#loginForm input#username, #loginForm input#password {
+    width: 200px;
+    background: #fff;
+}
+#loginForm input submit {
+    width: 100px;
+    margin: 20px auto;
+}
+#dashboardWrapper #leftColumn {
+    width: 280px;
+    background: #e2e2e2;
+    min-height: 1800px;
+    margin-left: 0;
+}
+#dashboardWrapper #leftColumn img {
+    margin-bottom: 15px!important;
+}
+#dashboardWrapper #leftColumn a {
+    color: #452468;
+    text-decoration: none;
+    font-size: 18px;
+    height: 29px;
+    background: url('/inthedark/app/img/dashboard/bg-logout-btn.png') 0 0 no-repeat;
+    display: block;
+    width: 260px;
+    text-align: center;
+    padding-top: 3px;
+}
+#dashboardWrapper #leftColumn a:hover {
+    color: #762b9d;
+}
+#dashboardWrapper #rightColumn {
+    width: 700px;
+    min-height: 640px;
+}
+#testSummary {
+    margin: 20px 20px 40px 40px;
+}
+#dashboardWrapper h2 {
+    font-height: 26px;
+    line-height: 40px;
+}
+#completedTestScores {
+    margin: 20px;
+}
+#completedTestScoresR {
+    margin: 50px;
+}
+#completedResults {
+    margin: 20px 40px 20px 20px;
+    border-top: 1px solid #ccc;
+}
+#partialResults {
+    margin: 20px;
+    border-top: 1px solid #ccc;
+}
+#seeResults input {
+    display: block;
+    background: url('/inthedark/app/img/btn-see-results.png') 0 0 no-repeat;
+    width: 255px;
+    height: 41px;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+}
+#results h2 {
+    line-height: 30px;
+    margin-top: 20px;
+}
+#results h1 {
+    line-height: 50px;
+    font-size: 42px;
+}
+body#fifthPage #pageWrapper, body#sixthPage #pageWrapper, body#seventhPage #pageWrapper, body#eightPage #pageWrapper, body#ninthPage #pageWrapper {
+    margin-top: 0;
+}
+body#secondAnswer #leftColumn, body#thirdAnswer #leftColumn, body#fifthAnswer #leftColumn, body#ninthAnswer #leftColumn {
+    width: 350px;
+margin-bottom: 0;
+margin-top:10px;
+}
+
+/*Mobile Test*/
+#content {
+	max-width:1000px;
+	min-height:800px;
+    margin: 0 auto;    
+    background: #0D5C8D; /* fallback for non-supporting browsers */
+	background-image: -webkit-gradient(radial, center center, 0, center center, 141, from(#076A9D), to(#076A9D), color-stop(25%, #076A9D), color-stop(40%, #076A9E), color-stop#0c5685, color-stop(80%, #0D5C8D)); /* old WebKit Syntax */
+	background-image: -webkit-radial-gradient(center center, circle contain, #076A9D 0%,  #076A9D 25%, #076A9D 40%, #076A9D 60%, #0a5f8f 80%, #0D5C8D 100%); /* New WebKit syntax */
+	background-image: -moz-radial-gradient(center center, circle contain, #076A9D 0%, #0580B1 25%, #0580B1 40%, #076A9E 60%, #0a5f8f 80%, #0D5C8D 100%);
+	background-image: -ms-radial-gradient(center center, circle contain, #076A9D 0%, #076A9D 25%, #076A9D 40%, #076A9D 60%, #076A9D 80%, #0D5C8D 100%); /* IE10+ */
+	background-image: -o-radial-gradient(center center, circle contain, #076A9D 0%, #038fbf 25%, #07699c 40%, #076A9E 60%, #0a5f8f 80%, #0D5C8D 100%); /* Opera (13?) */
+    position:relative;
+} 
+
+#page {
+	max-width:1000px;
+	min-height:800px;
+    margin: 0 auto;    
+    background: #0D5C8D; /* fallback for non-supporting browsers */
+	background-image: -webkit-gradient(radial, center center, 0, center center, 141, from(#076A9D), to(#076A9D), color-stop(25%, #076A9D), color-stop(40%, #076A9E), color-stop#0c5685, color-stop(80%, #0D5C8D)); /* old WebKit Syntax */
+	background-image: -webkit-radial-gradient(center center, circle contain, #076A9D 0%,  #076A9D 25%, #076A9D 40%, #076A9D 60%, #0a5f8f 80%, #0D5C8D 100%); /* New WebKit syntax */
+	background-image: -moz-radial-gradient(center center, circle contain, #076A9D 0%, #0580B1 25%, #0580B1 40%, #076A9E 60%, #0a5f8f 80%, #0D5C8D 100%);
+	background-image: -ms-radial-gradient(center center, circle contain, #076A9D 0%, #076A9D 25%, #076A9D 40%, #076A9D 60%, #076A9D 80%, #0D5C8D 100%); /* IE10+ */
+	background-image: -o-radial-gradient(center center, circle contain, #076A9D 0%, #038fbf 25%, #07699c 40%, #076A9E 60%, #0a5f8f 80%, #0D5C8D 100%); /* Opera (13?) */
+    position:relative;
+
+}
+#takeTestBtn {
+    display: block;
+    width: 286px;
+    height: 48px;
+    margin-left:265px;
+/*     margin:0 auto; */
+    text-indent:-9999px;
+} 
+#outlawImg {
+    display: block;
+    margin-left:245px;
+    overflow:hidden;
+}
+
+/*Footer*/
+#footerLinks {
+	clear:both;
+    color: #371C54;
+    margin-top: 25px;
+    padding-bottom: 0;
+    margin-left:100px;
+    font-size:12px;    
+}
+
+body#homepage #footerLinks {
+	clear:both;
+    color: #371C54;
+    font-size: 12px;
+    margin-top: 0;
+    padding-bottom: 0;
+    
+}
+#footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+#footerLinks li {
+    display: inline;
+}
+#footerLinks a {
+    color: #371c54;
+    text-decoration: none;
+}
+
+/*Pages*/
+#pageWrapper {
+	max-width:1000px;
+	min-height:800px;
+    margin: 20px auto;
+        position:relative;
+
+}
+#formWrapper {
+	position:relative;
+}
+#pageIntro {
+	display:block;
+	width:100%;
+	height:40px;
+	background: none repeat scroll 0 0 #CA3793;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+#pageIntro h1 {
+    color: #FFFFFF;
+    font-size: 18px;
+    height: 25px;
+    left: 0;
+    line-height: 40px;
+    padding: 5px 3% 10px;
+    position: absolute;
+    top: 0;
+}
+#pageIntro p {
+	font-family: Arial, Verdana, sans-serif;
+	color: #452468;
+	display:block;
+	width:90%;
+	margin:0 auto;
+}
+#formWrapper p {
+	font-family: Arial, Verdana, sans-serif;
+	color: #452468;
+	display:block;
+	width:100%;
+	margin:0 auto;
+}
+#submitAnswer input {
+    display: block;
+    background: url('/inthedark/app/img/mobile/bg-btn.png') 0 0 no-repeat;
+    width: 175px;
+    height: 34px;
+/*
+    text-indent: -9999px;
+    font-size: 0;
+*/
+    border: none;
+    cursor: pointer;
+    margin-left:10px;
+    color:#fff;
+    font-size:18px;
+}
+#submitAnswer {
+    padding-bottom:10px;
+}
+
+img#mainLogo {
+	margin:0 0 0 120px;
+	display:block;
+	width:184px;
+}
+
+#progressBar {
+    display: block;
+    position:relative;
+    padding-bottom: 20px;
+}
+img.campaignLogo {
+	margin-top:-52px;
+	margin-left:20px;
+}
+img.testBar {
+	margin-top:60px;
+	margin-left:100px;
+	margin-bottom:30px;
+}
+
+/*Form*/
+#homepage #contentWrapper {
+	margin:20px auto;
+	background:none;
+	 	width:100%;
+}
+#homepage #footer {
+    width: 100%;
+    margin: 20px auto 0 auto;
+}
+
+#contentWrapper {
+ 	width:50%;
+    margin-left:135px;
+	margin-top:-55px;
+	background:#fff;
+	position:relative;
+
+}
+.questionBox p {
+    padding: 8px;
+    font-size: 0.875em; /*14px*/
+	color:#452468;
+}
+
+.answerBox {
+ 	display: block;
+    margin-top: -38px;
+    padding: 10px 55px;
+    position: relative;
+}
+.answerBox p {
+    padding: 5px 8px;
+    font-size: 0.875em; /*14px*/
+	color:#452468;
+}
+
+/*Questions*/
+.questionBox {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top:-35px;
+}
+p.formError {
+    font-size: 16px;
+    color: red;
+    padding: 10px 0;
+}
+#formWrapper {
+ display:block;
+ position:relative;
+ margin-top:20px;
+ margin-bottom:10px;
+}
+#formWrapper input.suggest {
+    display: inline;
+    margin-left: -30px;
+    margin-right: 60px;
+    height: 20px;
+    width: 20px;
+}
+#formWrapper input.emptyTick {
+    display: inline;
+    margin-left: -30px;
+    margin-right: 60px;
+    height: 20px;
+    width: 20px;
+}
+#formWrapper img.unlawfulAnswer {
+    display: inline;
+    margin-left: -30px;
+    margin-right: 60px;
+    height: 20px;
+    width: 20px;
+}
+#formWrapper span.unlawfullTitle {
+    display: block;
+    margin-left: -30px;
+    width: 57px;
+    height: 37px;
+    background: url('/inthedark/app/img/pic-text-whats-unlawful.png') 0 0 no-repeat;
+    text-indent: -9999px;
+    text-height: 0;
+    margin-bottom: 10px;
+}
+#formWrapper span.yourAnswerTitle {
+    display: block;
+    width: 49px;
+    height: 32px;
+    background: url('/inthedark/app/img/pic-text-your-answer.png') 0 0 no-repeat;
+    text-indent: -9999px;
+    text-height: 0;
+}
+/**/
+#leftColumn {
+    display: block;
+    margin-left: 15px;
+    width: 80%;
+    margin-top:20px;
+}
+#rightColumn {
+    display: block;
+    width: 380px;
+}
+#introText {
+}
+#introText p {
+	background:url('/inthedark/app/img/mobile/bg-page-no.png') 0 0 no-repeat;
+	padding-left:80px;
+	width:80%;
+	font-size:0.875em;
+	min-height: 50px;
+	position:relative;
+}
+body#firstPage #leftColumn {
+    margin-left: 112px;
+}
+
+span#pageNumber {
+	color: #FFFFFF !important;
+    font-size: 18px;
+    left: 33px;
+    position: absolute;
+    top: 15px;
+}
+span#progressInfo{
+    color: #FFFFFF !important;
+    font-size: 20px;
+    position: absolute;
+    right: 150px;
+    top: 135px;
+    font-weight:bold;
+}
+
+/*Answers*/
+#firstAnswer #leftColumn { 
+	display: block;
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 80%;
+}
+#firstAnswer #tipBox {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    opacity: 0;
+    width: 24%;
+    margin: 0 40px 0 0;
+    background: #fff url('/inthedark/app/img/mobile/Question1.png') 200px 10px no-repeat;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    margin-top:-50px;
+    margin-right:40px;
+    margin-top:-54px;
+    padding:3%;
+}
+#secondAnswer #tipBox {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    opacity: 0;
+    width: 24%;
+    margin: 0 40px 0 0;
+    background: #fff url('/inthedark/app/img/mobile/Question2.png') 200px 10px no-repeat;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    margin-top:-50px;
+    margin-right:40px;
+    margin-top:-54px;
+    padding:3%;
+}
+#thirdAnswer #tipBox {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    opacity: 0;
+    width: 24%;
+    margin: 0 40px 0 0;
+    background: #fff url('/inthedark/app/img/mobile/Question3.png') 200px 10px no-repeat;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    margin-top:-50px;
+    margin-right:40px;
+    margin-top:-54px;
+    padding:3% 3% 0 3%;
+}
+#fourthAnswer #tipBox {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    opacity: 0;
+    width: 24%;
+    margin: 0 40px 0 0;
+    background: #fff url('/inthedark/app/img/mobile/Question4.png') 200px 10px no-repeat;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    margin-top:-50px;
+    margin-right:40px;
+    margin-top:-54px;
+    padding:3%;
+}
+#fifthAnswer #tipBox {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    opacity: 0;
+    width: 24%;
+    margin: 0 40px 0 0;
+    background: #fff url('/inthedark/app/img/mobile/Question5.png') 200px 10px no-repeat;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    margin-top:-50px;
+    margin-right:40px;
+    margin-top:-54px;
+    padding:3%;
+}
+#sixthAnswer #tipBox {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    opacity: 0;
+    width: 24%;
+    margin: 0 40px 0 0;
+    background: #fff url('/inthedark/app/img/mobile/Question6.png') 200px 10px no-repeat;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    margin-top:-50px;
+    margin-right:40px;
+    margin-top:-54px;
+    padding:3%;
+}
+#seventhAnswer #tipBox {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    opacity: 0;
+    width: 24%;
+    margin: 0 40px 0 0;
+    background: #fff url('/inthedark/app/img/mobile/Question7.png') 200px 10px no-repeat;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    margin-top:-50px;
+    margin-right:40px;
+    margin-top:-54px;
+    padding:3%;
+}
+#eightAnswer #tipBox {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    opacity: 0;
+    width: 24%;
+    margin: 0 40px 0 0;
+    background: #fff url('/inthedark/app/img/mobile/Question8.png') 200px 10px no-repeat;
+    box-shadow: 1px 1px 1px #9fa3b0;
+    margin-top:-50px;
+    margin-right:40px;
+    margin-top:-54px;
+    padding:3%;
+}
+#tipBox .headerInfo {
+	font-size:18px;
+}
+#tipBox p {
+	padding:10px 0;
+	font-size:14px!important;
+}
+#firstAnswer #tipBox, #sixthAnswer #tipBox, #eightAnswer #tipBox {
+   /*  margin: 20px 0 0 50px; */
+}
+
+#firstAnswer #introText {
+/* 	margin-top:65px; */
+}
+#secondAnswer #introText {
+/* 	margin-top:65px; */
+}
+body#firstPage #introText {
+/* 	margin-top:0!important; */
+}
+p.headerInfo {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/*Header*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+    color: #452468;
+}
+#tipBox h2,
+#tipBox h3 {
+   padding:0;
+}
+#tipBox h3 {
+	margin-top:35px;
+	font-size:16px!important;
+}
+h1 {
+    font-size: 22px;
+    line-height: 24px;
+}
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h3 {
+    font-size: 14px;
+    line-height: 24px;
+}
+h4 {
+    font-size: 10px;
+    line-height: 12px;
+}
+h5 {
+    font-size: 6px;
+    line-height: 12px;
+}
+
+
+/*Results*/
+body#results #resultBox {
+	width:30%;
+	margin-right:40px;
+	margin-left:20px;
+	background:#fff;
+	position:relative
+}
+#resultBox {
+	position:relative;
+}
+body#results #leftColumn {
+	width:50%;
+	background:#fff;
+	margin:0 40px;
+	padding-top:0;
+}
+
+body#results #resultBox img {
+	margin:20px auto 20px auto;
+}
+
+body#results .resultHeading {
+	margin-top:15px;
+	margin-left:0!important;
+	padding:5px 5px 0 5px;
+	color:#CA3793;
+	font-size:18px !important;
+}
+
+body#results #challangeBoxes .resultHeading {
+	margin-top:15px;
+	margin-left:0!important;
+	padding:5px 5px 0 20px;
+	color:#CA3793;
+	font-size:18px !important;
+}
+
+span#moreTipsKnowthenet {
+	display:block;
+	margin:20px 20px 20px -20px!important;
+}
+
+body#results #resultBox h2 {
+	font-size:18px!important;
+	text-align:center;
+	margin-left:0;
+}
+#finalScoreInfo {
+	display:block;
+	font-size:0.875;
+	margin:20px auto 10px auto;
+	text-align: center;
+}
+
+#results h2 {
+	font-size:14px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-left:20px;
+}
+
+#resultsInfo p {
+    line-height: 20px;
+    font-size:0.875em;
+    padding:5px 20px;
+}
+
+#resultNumber p {
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Droid Sans',Verdana,Arial,sans-serif;
+    font-size: 45px;
+    left: 65px;
+    line-height: 45px;
+    position: absolute;
+    text-shadow: 1px 3px 3px #4D2874;
+    top: 150px;
+}
+
+#footerBoxLarge {
+	max-width:1000px;
+	margin:0 auto;	
+	position:relative;
+	clear:both;
+}
+
+#footerWrapper {
+	width:100%;
+	position: absolute;
+    bottom:-42px;
+    height:42px;
+    left:0;
+    background: url("/inthedark/app/img/mobile/bg-btm.png") no-repeat scroll 0 0 transparent;
+}
+
+/*Cols*/
+#firstAnswer #leftColumn {
+margin-left:120px!important;
+}
+#secondAnswer #leftColumn {
+margin-left:65px!important;
+}
+#thirdAnswer #leftColumn {
+margin-left:122px!important;
+}
+#fourthAnswer #leftColumn {
+margin-left:120px!important;
+}
+#fifthAnswer #leftColumn {
+margin-left:120px!important;
+}
+#sixthAnswer #leftColumn {
+margin-left:122px!important;
+}
+#seventhAnswer #leftColumn {
+margin-left:120px!important;
+margin-top:0!important;
+}
+#eightAnswer #leftColumn {
+margin-left:120px!important;
+}
+
+#firstAnswer #introText {
+margin-top:10px;
+margin-bottom: 10px;
+}
+#secondAnswer #introText {
+margin-top:10px;
+margin-bottom: 0!important;
+}
+#thirdAnswer #introText {
+margin-top:10px;
+margin-bottom: 0!important;
+}
+#fourthAnswer #introText {
+margin-top:10px;
+margin-bottom: 0!important;
+}
+#fifthAnswer #introText {
+margin-top:10px;
+margin-bottom: -5px!important;
+}
+#sixthAnswer #introText {
+margin-top:10px;
+margin-bottom: 10px;
+}
+#seventhAnswer #introText {
+margin-top:10px;
+margin-bottom: -5px!important;
+}
+#eightAnswer #introText {
+margin-top:10px;
+margin-bottom: 10px;
+}
+
+
+body#firstPage #introText {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+body#secondPage #introText {
+	margin-top:10px;
+	margin-bottom:0!important;
+}
+body#thirdPage #introText {
+	margin-top:10px;
+margin-bottom: 0!important;
+}
+body#fourthPage #introText {
+	margin-top:10px;
+margin-bottom: -5px!important;
+}
+body#fifthPage #introText {
+	margin-top:10px;
+margin-bottom: -5px!important;
+}
+body#sixthPage #introText {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+body#seventhPage #introText {
+	margin-top:10px;
+margin-bottom: -5px!important;
+}
+body#eightPage #introText {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+/*Questions*/
+body#firstPage #leftColumn {
+    margin-left: 115px;
+    width: 360px;
+}
+body#secondPage #leftColumn {
+/*     margin-left: 105px; */
+    width: 360px;
+}
+body#thirdPage #leftColumn {
+    margin-left: 115px;
+    width: 360px;
+}
+body#fourthPage #leftColumn {
+    margin-left: 105px;
+    width: 360px;
+    padding-top:0;
+    padding-bottom:10px;
+}
+body#fourthPage #submitAnswer,
+body#fourthAnswer #submitAnswer {
+	padding-top:10px;
+}
+body#fifthPage #leftColumn {
+    margin-left: 110px;
+    width: 360px;
+    padding-top:0;
+    margin-bottom:0!important;
+}
+body#fifthAnswer #leftColumn {
+	    padding-top:0;
+	        	margin-bottom:0!important;
+}
+body#fifthPage #submitAnswer,
+body#fifthAnswer #submitAnswer {
+	padding-top:10px;
+}
+body#sixthPage #leftColumn {
+    margin-left: 115px;
+    width: 360px;
+}
+body#seventhPage #submitAnswer,
+body#seventhAnswer #submitAnswer {
+	padding-top:10px;
+	padding-bottom:20px;
+}
+body#firstPage #submitAnswer,
+body#firstPage #submitAnswer {
+	padding-bottom:20px;
+}
+body#secondPage #submitAnswer,
+body#secondPage #submitAnswer {
+	padding-bottom:20px;
+}
+body#thirdPage #submitAnswer,
+body#thirdPage #submitAnswer {
+	padding-bottom:20px;
+}
+body#seventhPage #leftColumn {
+    margin-left: 115px;
+    width: 360px;
+        padding-top:0;
+}
+body#seventhAnswer #leftColumn {
+    margin-left: 115px;
+    width: 360px;
+        padding-top:0;
+}
+body#eightPage #leftColumn {
+    margin-left: 115px;
+    width: 360px;
+}
+
+body#eightPage .questionBox {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -28px;
+    position: relative;
+}
+/*Infoboxes*/
+#leftColumn {
+    margin-top: 0!important;
+    padding-top:0;
+}
+#tipBox .pageScore {
+  color:#452468;
+  font-family:'Droid Sans', Verdana, Arial, sans-serif;
+  font-size:18px;
+  height:18px;
+  margin:0;
+  padding:0;
+  font-weight:bold;
+}
+
+#secondPage #submitAnswer input {
+    background: url("/inthedark/app/img/mobile/bg-btn.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    height: 34px;
+    margin-left: 60px;
+    width: 175px;
+    margin-top:20px;
+}
+
+#secondAnswer img.tickedBox {
+    display: inline;
+    height: 20px;
+    margin-left: -20px;
+    width: 20px;
+}
+
+body#fourthAnswer #leftColumn {
+  margin-left:20px;
+  width:350px;
+  margin-top:-10px!important;
+}
+
+body#fourthAnswer #nextBtn {
+    background: url("/inthedark/app/img/mobile/bg-btn.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    height: 34px;
+    margin-bottom: 20px;
+    margin-left: 85px;
+    width: 175px;
+    margin-top:0!important;
+}
+
+body#fifthAnswer #nextBtn {
+    background: url("/inthedark/app/img/mobile/bg-btn.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    height: 34px;
+    margin-bottom: 20px;
+    margin-left: 85px;
+    width: 175px;
+    margin-top:0!important;
+}
+
+body#seventhAnswer #introText p {
+	font-size:1em;
+} 
+
+#results #progressBar {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+#pageContent {
+	display:block;
+	position:relative;
+}
+body#fifthAnswer input.secondPageQuestions {
+    height: 20px;
+    margin-left: -28px!important;
+    padding: 5px;
+    width: 20px;
+}
+
+#nextBtn {
+	padding-bottom: 10px!important;
+}
+ul#resultsTipsList {
+	margin-left:20px;
+	margin-top:30px;
+	color:#402262;
+}
+ul#resultsTipsList li {
+	background:url('/inthedark/app/img/mobile/icon-list.png') 0 5px no-repeat;
+	padding-left:20px;
+	margin-bottom:20px;
+}
+ul#moreLinks {
+	display:block;
+	margin-top:40px;
+	width:90%;
+	margin-left:20px;
+	margin-bottom:40px;
+
+}
+ul#moreLinks a {
+	color:#fff;
+	font-size:12px;
+	text-decoration: none;
+
+}
+li#btnMoreSecurity {
+	background:url('/inthedark/app/img/mobile/btn-more-info.png') 0 0 no-repeat;
+	width:182px;
+	height:35px;
+	padding-left:5px;
+}
+
+li#btnAnotherTest {
+	background:url('/inthedark/app/img/mobile/btn-more-info.png') 0 0 no-repeat;
+	width:182px;
+	height:35px;
+	padding-left:10px;
+}
+
+#testFeedback {
+	display:block;
+	margin-left:35px;
+	width:100%;
+}
+#testFeedback p {
+	width:150px;
+	font-size:14px;
+	float:left;
+	padding:0 5px;
+	color:#CA3793;
+}
+.feedbackBtn {
+	width:40px;
+	height:20px;
+	color:#fff;
+	background:#4d2875;
+	border:1px solid #3c1f5c;
+	border-radius:4px;
+	margin:0 10px;
+	display:block;
+}
+
+.feedbackBtn a {
+	color:#fff;
+	font-size:14px;
+	text-decoration: none;
+	padding:6px 8px 7px 10px;
+	
+}
+
+#learMoreText {
+    font-family:'Droid Sans', Verdana, Arial, sans-serif;
+	display:block;
+	width:46%;
+	margin-right:135px;
+	font-size:14px;
+	color:#fff;
+	margin-top:20px;
+	padding:0 10px;
+}
+#learMoreText a {
+	color:#26AADB;
+	font-weight:bold;
+	text-decoration: none;
+}
+#tipBox p {
+	color:#452468;
+	font-size:12px!important;
+}
+.mainQuestionBox {
+
+}

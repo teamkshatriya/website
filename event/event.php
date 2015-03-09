@@ -1,0 +1,92 @@
+
+<html>
+<style type="text/css">
+	*{margin:0;padding:0;}
+	body{
+		background:url("background.JPG");
+	}
+	@font-face{
+		font-family:catull;
+		src:url('Roboto-Condensed.ttf');
+	}
+	#navbar
+	{
+		border:1px black solid;
+		height:30px;
+	}
+	#maindiv{
+		background: url("div.png");
+		width:800px;
+		height: 500px;
+		margin:0 auto;
+		margin-top: 70px;
+		position: relative;
+		z-index: -1;
+	}
+	#signin{
+		position: absolute;
+		color: #00aeef;
+		height:30px;
+		width:200px;
+		margin-left:340px;
+		text-align: center;
+		margin-top: 70px;
+		font-size: 30px;
+		font-family: catull;
+		
+	}
+	#arrow{
+		position: absolute;
+		height: 50px;
+		width: 50px;
+		background:url("arrow.PNG");
+		margin-left: 1050px;
+		margin-top: 290px;
+	}
+	#register{
+		position: absolute;
+		width:200px;
+		height: 30px;
+		font-size: 38px;
+		float: right;
+		margin-right: 60px;
+		margin-top: 428px;
+		text-align: center;
+		font-family: catull;
+		color: #00aeef;
+		bottom:0;
+	}
+	#part1{
+		display: block;
+		width:300px;
+		height: 300px;
+		border:1px black solid;
+		position: absolute;
+		margin:0 auto;
+		margin-top:100px;
+		margin-left: 270px;
+		
+	}
+	
+</style>
+<script type="text/javascript">
+	function next()
+	{
+		document.getElementById("part1").style.display = "none";  //visible
+		document.getElementById("part2").style.display = "block";
+	}
+</script>
+<body>
+	<div id="navbar"></div>
+	<div id="signin">EVENT BASICS</div>
+	<a href="ann.html"\><div id="arrow"></div></a>
+	<div id="register"></div>
+	<div id="maindiv">
+		
+		<div id="part1">
+			PART 1
+		</div>
+			
+	</div>
+</body>
+</html>

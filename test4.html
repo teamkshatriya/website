@@ -1,0 +1,1566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Team Kshatriya</title>
+<script src="jquery2.js"></script>
+<script src="scrolljs.js"></script>
+<script src="align.js"></script>
+<script src="js/bjqs.js"></script>
+<link type="text/css" rel="Stylesheet" href="js/bjqs.css" />
+<link href="slider.css" rel="stylesheet" />
+<script type="text/javascript">
+    var w = $(window).width();
+	var h= $(window).height();
+$(document).ready(function(e) {
+	var panes= document.getElementsByClassName("pane");
+	for(i=0;i<9;i++)
+	{
+	panes.item(i).style.height=h+'px';
+	panes.item(i).style.width=w+'px';
+	}
+	var handlers=document.getElementById("panehandler");
+	handlers.style.height=h+'px';
+	handlers.style.width=w+'px';
+	var handlers=document.getElementById("panecontainer");
+	handlers.style.height=h+'px';
+	handlers.style.width=(3*w+10)+'px';
+	var slide1=document.getElementById("slide1");
+	slide1.style.width=w+'px';
+	slide1.style.height=h+'px';
+	var slide2=document.getElementById("slide2");
+	slide2.style.width=w+'px';
+	slide2.style.height=h+'px';
+	var slide3=document.getElementById("slide3");
+	slide3.style.width=w+'px';
+	slide3.style.height=h+'px';
+	var slide3=document.getElementById("banner-slide");
+	slide3.style.width=w+'px';
+	slide3.style.height=h+'px';
+	$('.teamcontainer').css("width" , w+'px'); 
+	$('.sliderheaderleft').css("margin-top" , (h*0.33)+'px'); 
+	$('.sliderheaderright').css("margin-top" , (h*0.33)+'px'); 
+	
+	$('#panehandler').scrollTo( $("body").find(".pane").eq(4));
+$('#teamselect').click(function(){
+		$(window).stop();
+$('#panehandler').scrollTo( $("body").find(".pane").eq(3),800 );
+});
+$('#homeselect').click(function(){
+	$(window).stop();
+$('#panehandler').scrollTo( $("body").find(".pane").eq(4),800 );
+});
+$('#sponsorselect').click(function(){
+	$(window).stop();
+	$("#sponsor1").load("sponsor1.html");
+	$("#sponsor2").load("sponsor2.html");
+$('#panehandler').scrollTo( $("body").find(".pane").eq(2),800 );
+});
+$('#eventselect').click(function(){
+	$(window).stop();
+$('#panehandler').scrollTo( $("body").find(".pane").eq(1),800 );
+});
+$('#carselect').click(function(){
+	$(window).stop();
+$('#panehandler').scrollTo( $("body").find(".pane").eq(5),800 );
+});
+$('#alum').click(function(){
+	$(window).stop();
+$('#panehandler').scrollTo( $("body").find(".pane").eq(6),800 );
+});
+$('#aboutselect').click(function(){
+	$(window).stop();
+$('#panehandler').scrollTo( $("body").find(".pane").eq(7),800 );
+});
+$('#contactselect').click(function(){
+	$(window).stop();
+	$('#contactsupport').load("contact.html");
+$('#panehandler').scrollTo( $("body").find(".pane").eq(8),800 );
+});
+$('#banner-slide').bjqs({
+    animtype      : 'fade',
+    width         : w,
+    height        : h,
+	showcontrols  : true,
+    responsive    : false,
+    randomstart   : false,
+	showmarkers   : false,
+	hoverpause	  : false
+  });
+  /*$('.sy').css({"opcaity":"0.0","display" : "none"});
+	  $('.fy').css({"opcaity":"0.0","display" : "none"});
+	  $('.ts').css({"opcaity":"0.0","display" : "none"});*/
+	  $('#brakes').fadeIn(0);
+	  $('#steering').fadeOut(0);
+	  $('#cad').fadeOut(0);
+	  $('#electrical').fadeOut(0);
+	  $('#transmission').fadeOut(0);
+	  $('#suspension').fadeOut(0);
+	  $('#car2').fadeOut(0);
+	  $('#car3').fadeOut(0);
+	  $('#car4').fadeOut(0);
+	  $('#car5').fadeOut(0);
+	  $('#medi').fadeOut(0);
+	  $('#batch12').fadeOut(0);
+	  $('#batch11').fadeOut(0);
+	  $('#batch10').fadeOut(0);
+	  $('#batch09').fadeOut(0);
+	  $('#batch08').fadeOut(0);
+	  $('#evnt').load("evnt.html");
+	  $('#car1').load("vajra1.html");
+	  $("#brakes").load("brakes.html");
+	  $('#brakes').addClass('active');
+	  $('#evnt').addClass('active');
+	  $('#car1').addClass('active');
+	  $('#batch13').addClass('active');
+	  /*$('#display2').click(function()
+	  {
+		  $('#teamcontainer2').scrollTo($("body").find("team1").eq(1),800);
+	  });*/
+  $('#display2').click(function()
+  {
+	  /*$('.ty').css({"opcaity":"0.0","display" : "none"});
+	  $('.fy').css({"opcaity":"0.0","display" : "none"});
+	  $('.ts').css({"opcaity":"0.0","display" : "none"});
+	  $('.sy').css({"opcaity":"1.0","display" : "block"});*/
+	  $('.teamcontainer').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.teamcontainer').find('.active').removeClass('active');
+	  $('#cad').addClass('active');
+	  $('#cad').fadeIn(1000);
+	  $("#cad").load("cad.html");
+	  $('#display2').addClass('clickedmenu');
+	  $('#display2').removeClass('tlinks2');
+	  $('#display3').removeClass('clickedmenu');
+	  $('#display1').removeClass('clickedmenu');
+	  $('#display4').removeClass('clickedmenu');
+	  $('#display5').removeClass('clickedmenu');
+	   $('#display6').removeClass('clickedmenu');
+	  $('#display3').addClass('tlinks2');
+	  $('#display1').addClass('tlinks2');
+	  $('#display4').addClass('tlinks2');
+	  $('#display5').addClass('tlinks2');
+	  $('#display6').addClass('tlinks2');
+  });
+  $('#display3').click(function()
+  {
+	  /*$('.fy').css({"opcaity":"0.0","display" : "none"});
+	  $('.sy').css({"opcaity":"0.0","display" : "none"});
+	  $('.ts').css({"opcaity":"0.0","display" : "none"});
+	  $('.ty').css({"opcaity":"1.0","display" : "block"});*/
+	  $('.teamcontainer').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.teamcontainer').find('.active').removeClass('active');
+	  $('#brakes').addClass('active');
+	  $('#brakes').fadeIn(1000);
+	  $("#brakes").load("brakes.html");
+	  $('#display3').addClass('clickedmenu');
+	  $('#display3').removeClass('tlinks2');
+	  $('#display2').removeClass('clickedmenu');
+	  $('#display1').removeClass('clickedmenu');
+	  $('#display4').removeClass('clickedmenu');
+	  $('#display5').removeClass('clickedmenu');
+	   $('#display6').removeClass('clickedmenu');
+	  $('#display2').addClass('tlinks2');
+	  $('#display1').addClass('tlinks2');
+	  $('#display4').addClass('tlinks2');
+	  $('#display5').addClass('tlinks2');
+	  $('#display6').addClass('tlinks2');
+  });
+  $('#display1').click(function()
+  {
+	  /*$('.ty').css({"opcaity":"0.0","display" : "none"});
+	  $('.sy').css({"opcaity":"0.0","display" : "none"});
+	  $('.ts').css({"opcaity":"0.0","display" : "none"});
+	  $('.fy').css({"opcaity":"1.0","display" : "block"});*/
+	  $('.teamcontainer').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.teamcontainer').find('.active').removeClass('active');
+	  $('#electrical').addClass('active');
+	  $('#electrical').fadeIn(1000);
+	  $("#electrical").load("electrical.html");
+	  $('#display1').addClass('clickedmenu');
+	  $('#display1').removeClass('tlinks2');
+	  $('#display2').removeClass('clickedmenu');
+	  $('#display3').removeClass('clickedmenu');
+	  $('#display4').removeClass('clickedmenu');
+	  $('#display5').removeClass('clickedmenu');
+	   $('#display6').removeClass('clickedmenu');
+	  $('#display2').addClass('tlinks2');
+	  $('#display3').addClass('tlinks2');
+	  $('#display4').addClass('tlinks2');
+	  $('#display5').addClass('tlinks2');
+	  $('#display6').addClass('tlinks2');
+  });
+  $('#display4').click(function()
+  {
+	  /*$('.ty').css({"opcaity":"0.0","display" : "none"});
+	  $('.sy').css({"opcaity":"0.0","display" : "none"});
+	  $('.fy').css({"opcaity":"0.0","display" : "none"});
+	  $('.ts').css({"opcaity":"1.0","display" : "block"});*/
+	  $('.teamcontainer').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.teamcontainer').find('.active').removeClass('active');
+	  $('#steering').addClass('active');
+	  $('#steering').fadeIn(1000);
+	  $("#steering").load("steering.html");
+	  $('#display4').addClass('clickedmenu');
+	  $('#display4').removeClass('tlinks2');
+	  $('#display1').removeClass('clickedmenu');
+	  $('#display2').removeClass('clickedmenu');
+	  $('#display3').removeClass('clickedmenu');
+	  $('#display5').removeClass('clickedmenu');
+	   $('#display6').removeClass('clickedmenu');
+	  $('#display1').addClass('tlinks2');
+	  $('#display2').addClass('tlinks2');
+	  $('#display3').addClass('tlinks2');
+	  $('#display5').addClass('tlinks2');
+	  $('#display6').addClass('tlinks2');
+  });
+  $('#display5').click(function()
+  {
+	  /*$('.ty').css({"opcaity":"0.0","display" : "none"});
+	  $('.sy').css({"opcaity":"0.0","display" : "none"});
+	  $('.fy').css({"opcaity":"0.0","display" : "none"});
+	  $('.ts').css({"opcaity":"1.0","display" : "block"});*/
+	  $('.teamcontainer').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.teamcontainer').find('.active').removeClass('active');
+	  $('#transmission').addClass('active');
+	  $('#transmission').fadeIn(1000);
+	  $("#transmission").load("transmission.html");
+	  $('#display5').addClass('clickedmenu');
+	  $('#display5').removeClass('tlinks2');
+	  $('#display1').removeClass('clickedmenu');
+	  $('#display2').removeClass('clickedmenu');
+	  $('#display3').removeClass('clickedmenu');
+	  $('#display4').removeClass('clickedmenu');
+	  $('#display6').removeClass('clickedmenu');
+	  $('#display1').addClass('tlinks2');
+	  $('#display2').addClass('tlinks2');
+	  $('#display3').addClass('tlinks2');
+	  $('#display4').addClass('tlinks2');
+	  $('#display6').addClass('tlinks2');
+  });
+  $('#display6').click(function()
+  {
+	  /*$('.ty').css({"opcaity":"0.0","display" : "none"});
+	  $('.sy').css({"opcaity":"0.0","display" : "none"});
+	  $('.fy').css({"opcaity":"0.0","display" : "none"});
+	  $('.ts').css({"opcaity":"1.0","display" : "block"});*/
+	  $('.teamcontainer').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.teamcontainer').find('.active').removeClass('active');
+	  $('#suspension').addClass('active');
+	  $('#suspension').fadeIn(1000);
+	  $("#suspension").load("suspension.html");
+	  $('#display6').addClass('clickedmenu');
+	  $('#display6').removeClass('tlinks2');
+	  $('#display1').removeClass('clickedmenu');
+	  $('#display2').removeClass('clickedmenu');
+	  $('#display3').removeClass('clickedmenu');
+	  $('#display4').removeClass('clickedmenu');
+	  $('#display5').removeClass('clickedmenu');
+	  $('#display1').addClass('tlinks2');
+	  $('#display2').addClass('tlinks2');
+	  $('#display3').addClass('tlinks2');
+	  $('#display4').addClass('tlinks2');
+	  $('#display5').addClass('tlinks2');
+  });
+  $('#vajra').click(function()
+  {
+	  $('.carlist').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.carlist').find('.active').removeClass('active');
+	  $('#car1').fadeIn(1000);
+	  $('#car1').addClass('active');
+	  $('#car1').load("vajra1.html");
+	  $('#carsmenu').find('.clickedmenu').addClass('tlinks2');
+	  $('#carsmenu').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#vajra').addClass('clickedmenu');
+	  $('#vajra').removeClass('tlinks2');
+  });
+  $('#vajra2').click(function()
+  {
+	  $('.carlist').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.carlist').find('.active').removeClass('active');
+	  $('#car2').fadeIn(1000);
+	  $('#car2').addClass('active');
+	  $('#car2').load("vajra2.html");
+	  $('#carsmenu').find('.clickedmenu').addClass('tlinks2');
+	  $('#carsmenu').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#vajra2').addClass('clickedmenu');
+	  $('#vajra2').removeClass('tlinks2');
+  });
+  $('#car2009').click(function()
+  {
+	  $('.carlist').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.carlist').find('.active').removeClass('active');
+	  $('#car4').fadeIn(1000);
+	  $('#car4').addClass('active');
+	  $('#car4').load("car2009.html");
+	  $('#carsmenu').find('.clickedmenu').addClass('tlinks2');
+	  $('#carsmenu').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#car2009').addClass('clickedmenu');
+	  $('#car2009').removeClass('tlinks2');
+  });
+  $('#car2007').click(function()
+  {
+	  $('.carlist').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.carlist').find('.active').removeClass('active');
+	  $('#car5').fadeIn(1000);
+	  $('#car5').addClass('active');
+	  $('#car5').load("car2007.html");
+	  $('#carsmenu').find('.clickedmenu').addClass('tlinks2');
+	  $('#carsmenu').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#car2007').addClass('clickedmenu');
+	  $('#car2007').removeClass('tlinks2');
+  });
+  $('#rudra').click(function()
+  {
+	  $('.carlist').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.carlist').find('.active').removeClass('active');
+	  $('#car3').fadeIn(1000);
+	  $('#car3').addClass('active');
+	  $('#car3').load("rudra.html");
+	  $('#carsmenu').find('.clickedmenu').addClass('tlinks2');
+	  $('#carsmenu').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#rudra').addClass('clickedmenu');
+	  $('#rudra').removeClass('tlinks2');
+  });
+  $('#mediasp').click(function()
+  {
+	  $('.imgcont').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.imgcont').find('.active').removeClass('active');
+	  $('#medi').fadeIn(1000);
+	  $('#medi').addClass('active');
+	  $('#medi').load("medi.html");
+	  $('#events').find('.clickedmenu').addClass('tlinks2');
+	  $('#events').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#mediasp').addClass('clickedmenu');
+	  $('#mediasp').removeClass('tlinks2');
+  });
+  $('#eventsp').click(function()
+  {
+	  $('.imgcont').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('.imgcont').find('.active').removeClass('active');
+	  $('#evnt').fadeIn(1000);
+	  $('#evnt').addClass('active');
+	  $('#evnt').load("evnt.html");
+	  $('#events').find('.clickedmenu').addClass('tlinks2');
+	  $('#events').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#eventsp').addClass('clickedmenu');
+	  $('#eventsp').removeClass('tlinks2');
+  });
+  $('#b12').click(function()
+  {
+	  $('#batchcont').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('#batchcont').find('.active').removeClass('active');
+	  $('#batch12').fadeIn(1000);
+	  $('#batch12').addClass('active');
+	  $('#alumini').find('.clickedmenu').addClass('tlinks2');
+	  $('#alumini').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#b12').addClass('clickedmenu');
+	  $('#b12').removeClass('tlinks2');
+  });
+  $('#b11').click(function()
+  {
+	  $('#batchcont').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('#batchcont').find('.active').removeClass('active');
+	  $('#batch11').fadeIn(1000);
+	  $('#batch11').addClass('active');
+	  $('#alumini').find('.clickedmenu').addClass('tlinks2');
+	  $('#alumini').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#b11').addClass('clickedmenu');
+	  $('#b11').removeClass('tlinks2');
+  });
+  $('#b10').click(function()
+  {
+	  $('#batchcont').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('#batchcont').find('.active').removeClass('active');
+	  $('#batch10').fadeIn(1000);
+	  $('#batch10').addClass('active');
+	  $('#alumini').find('.clickedmenu').addClass('tlinks2');
+	  $('#alumini').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#b10').addClass('clickedmenu');
+	  $('#b10').removeClass('tlinks2');
+  });
+  $('#b09').click(function()
+  {
+	  $('#batchcont').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('#batchcont').find('.active').removeClass('active');
+	  $('#batch09').fadeIn(1000);
+	  $('#batch09').addClass('active');
+	  $('#alumini').find('.clickedmenu').addClass('tlinks2');
+	  $('#alumini').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#b09').addClass('clickedmenu');
+	  $('#b09').removeClass('tlinks2');
+  });
+  $('#b08').click(function()
+  {
+	  $('#batchcont').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('#batchcont').find('.active').removeClass('active');
+	  $('#batch08').fadeIn(1000);
+	  $('#batch08').addClass('active');
+	  $('#alumini').find('.clickedmenu').addClass('tlinks2');
+	  $('#alumini').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#b08').addClass('clickedmenu');
+	  $('#b08').removeClass('tlinks2');
+  });
+  $('#b13').click(function()
+  {
+	  $('#batchcont').find('.active').css({"opcaity":"0.0","display" : "none"});
+	  $('#batchcont').find('.active').removeClass('active');
+	  $('#batch13').fadeIn(1000);
+	  $('#batch13').addClass('active');
+	  $('#alumini').find('.clickedmenu').addClass('tlinks2');
+	  $('#alumini').find('.clickedmenu').removeClass('clickedmenu');	  
+	  $('#b13').addClass('clickedmenu');
+	  $('#b13').removeClass('tlinks2');
+  });
+}); 
+$(window).resize(function(e) {
+	var w = $(window).width();
+	var h= $(window).height();
+    var panes= document.getElementsByClassName("pane");
+	for(i=0;i<9;i++)
+	{
+	panes.item(i).style.height=h+'px';
+	panes.item(i).style.width=w+'px';
+	}
+	var handlers=document.getElementById("panehandler");
+	handlers.style.height=h+'px';
+	handlers.style.width=w+'px';
+	var handlers=document.getElementById("panecontainer");
+	handlers.style.height=h+'px';
+	handlers.style.width=(3*w+10)+'px';
+	var slide1=document.getElementById("slide1");
+	slide1.style.width=w+'px';
+	slide1.style.height=h+'px';
+	var slide2=document.getElementById("slide2");
+	slide2.style.width=w+'px';
+	slide2.style.height=h+'px';
+	var slide3=document.getElementById("slide3");
+	slide3.style.width=w+'px';
+	slide3.style.height=h+'px';
+	var slide3=document.getElementById("banner-slide");
+	slide3.style.width=w+'px';
+	slide3.style.height=h+'px';
+	$('.teamcontainer').css("width" , w+'px'); 
+	$('.sliderheaderleft').css("margin-top" , (h*0.33)+'px'); 
+	$('.sliderheaderright').css("margin-top" , (h*0.33)+'px'); 
+	$('#teamheader').css({"margin-left":((w/2)-100)+'px',"margin-top":((h/4)-75)+'px'});
+	$('#teamsupport').css({"margin-left":((w/2)-490)+'px'});
+	$('#sponsorheader').css({"margin-left":((w/2)-100)+'px',"margin-top":((h/4)-75)+'px'});
+	$('#sponsorsupport').css({"margin-left":((w/2)-490)+'px'});
+	$('#aboutheader').css({"margin-left":((w/2)-100)+'px',"margin-top":((h/4)-75)+'px'});
+	$('#aboutheader2').css({"margin-left":((w/2)-100)+'px'});
+	$('#aboutsupport').css({"margin-left":((w/2)-490)+'px'});
+	$('#carheader').css({"margin-left":((w/2)-100)+'px',"margin-top":((h/4)-75)+'px'});
+	$('#carsupport').css({"margin-left":((w/2)-490)+'px'});
+	$('.carlist').css({"margin-left":((w/2)-490)+'px'});
+	$('#years').css({"margin-left":((w/2)-360)+'px'});
+	$('#years2').css({"margin-left":((w/2)-100)+'px'});
+	$('#brakes').css({"margin-left":((w/2)-200)+'px'});
+	$('#steering').css({"margin-left":((w/2)-200)+'px'});
+	$('#cad').css({"margin-left":((w/2)-370)+'px'});
+	$('#suspension').css({"margin-left":((w/2)-500)+'px'});
+	var trans=$('#transmission').find('.image-div').length;
+	trans=trans*160;
+	trans=trans/2;
+	$('#electrical').css({"margin-left":((w/2)-130)+'px'});
+	$('#transmission').css({"margin-left":((w/2)-trans+14)+'px'});
+});
+$(window).load(function(){
+	$('#overlay').fadeOut(1000).delay(800);
+});
+</script>
+</head>
+<style>
+@font-face
+{
+	font-family:'ksh1';
+	src:url('fonts/Gotham-Bold.otf');
+}
+@font-face
+{
+	font-family:'ksh2';
+	src:url('fonts/GothamRnd-Book.otf');
+}
+#banner-slide
+{
+	background-color:#1d1d1d;
+	overflow:hidden;
+}
+#car2
+{
+	display:hidden;
+}
+*{
+	margin:0;
+	padding:0;
+	font-family:"ksh1";
+}
+.slide1
+{
+	background-image:url("slides/1.jpg");
+	background-size:cover;
+}
+.slide2
+{
+	background-image:url("slides/2.jpg");
+	background-size:cover;
+
+}
+.slide3
+{
+	background-image:url("slides/3.jpg");
+	background-size:cover;
+
+}
+.toplist
+{
+	position:absolute;
+	float:left;
+	z-index:999;
+	padding:0;
+	margin-top:20px;
+	background:url("textures/bar.png");
+	list-style:none;
+}
+.toplist li
+{
+	display:inline;
+}
+.toplist li .tlinks
+{
+	font-family:"ksh2";
+	text-decoration:none;
+ width:auto;
+ color:#e8e8e8;
+ float:left;
+ font-size:150%;
+ text-align:center;
+ padding:15px;
+ padding-top:10px;
+ transition:all 500ms;
+	-moz-transition:all 500ms; /* Firefox 4 */
+	-webkit-transition:all 500ms;
+}
+.toplist li .tlinks:hover
+{
+	color:#ffbb33;
+}
+.slideheaderleft
+{
+	margin-top:125px;
+	display:inline-block;
+	font-family:"ksh1";
+	color:#e8e8e8;
+	margin-left:100px;
+	font-size:150%;
+	max-width:300px;
+	background:url('textures/bar.png');
+	padding:30px;
+}
+.slideheaderright
+{
+	margin-top:125px;
+	display:inline-block;
+	font-family:"ksh1";
+	color:#e8e8e8;
+	float:right;
+	margin-right:100px;
+	font-size:150%;
+	max-width:320px;
+	background:url('textures/bar.png');
+	padding:30px;
+}
+.endlist
+{
+	float:right;
+	padding:0;
+	width:auto;
+	background:url("textures/bar.png");
+	list-style:none;
+	display:inline-block;
+}
+.endlist li
+{
+	display:inline;
+}
+.endlist li .elinks
+{
+font-family:"ksh2";
+text-decoration:none;
+ width:auto;
+ color:#e8e8e8;
+ float:right;
+ font-size:200%;
+ text-align:center;
+ padding:15px;
+ padding-top:10px;
+}
+.endlist li .elinks:hover
+{
+	color:#0050ef;
+}
+#overlay {
+  background-color: black;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 100000;
+  opacity:0.95;
+}
+.overlay-image {
+  display:inline-block;
+  margin-left:20%;
+  margin-top:12.5%;
+}
+#red
+{
+	background-color:#cc0000;
+}
+#green
+{
+	background-color:#00cc00;
+}
+#blue
+{
+	background-color:#0000cc;
+}
+#yellow
+{
+	background-color:#cccc00;
+}
+#grey
+{
+	background-color:#e8e8e8;
+}
+#black
+{
+	background-color:#222222;
+}
+#cyan
+{
+	background-color:#25a0db;
+}
+#orange
+{
+	background-color:#C30;
+}
+#white
+{
+	background-color:#f9f9f9;
+}
+.pane
+{
+	display:inline-block;
+	padding:1px;
+	float:left;
+}
+#panehandler
+{
+	overflow:hidden;
+}
+#panecontainer li
+{
+	display:inline-block;
+	float:left;
+	padding:0;
+}
+#panecontainer li div
+{
+	display:inline-block;
+}
+#panecontainer
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.bigheader
+{
+	display:inline-block;
+	width:auto;
+	font-family:"ksh2";
+	font-size:175%;
+	padding:10px;
+	color:#222222;
+}
+.bigheader2
+{
+	display:inline-block;
+	width:auto;
+	font-family:"ksh2";
+	font-size:175%;
+	padding:10px;
+	color:#f9f9f9;
+	text-align:center;
+	margin-left:40% !important;
+}
+.boldtext
+{
+	display:inline-block;
+	width:auto;
+	font-family:"ksh2";
+	font-size:175%;
+	padding:10px;
+	color:#222222;
+}
+#homehead
+{
+	margin-top:300px;
+	margin-left:100px;
+}
+body
+{
+	/*background-image:url("textures/texture.png");*/
+}
+.teamcontainer
+{
+	min-height:100px;
+	display:inline-block;
+	margin-top:10px;
+}
+.teammember
+{
+	float:left;
+	margin-top:20px;
+	background-color:#efefef;
+	margin-left:10px;
+	 -moz-transition:all ease 0.5s;
+	-o-transition:all ease 0.5s;
+	-webkit-transition:all ease 0.5s;
+	-ms-transition:all ease 0.5s;
+}
+.teammember:hover .naam
+{
+	background-color:#ff8800;
+}
+.supportivetext
+{
+	color:#5b5b5b;
+	width:980px;
+	height:50px;
+	display:inline-block;
+	margin-top:10px;
+}
+.naam
+{
+	width:150px;
+	padding-bottom:3px;
+	padding-top:2px;
+	height:20px;
+	text-align:center;
+	color:#efefef;
+	background-color:#e57a00;
+	-moz-transition:all ease 0.5s;
+	-o-transition:all ease 0.5s;
+	-webkit-transition:all ease 0.5s;
+	-ms-transition:all ease 0.5s;
+}
+.photo
+{
+	height:130px;
+	width:150px;
+}
+.sy
+{
+	opcaity:0.0;
+	display:none;
+}
+.fy
+{
+	opcaity:0.0;
+	display:none;
+}
+.ts
+{
+	opcaity:0.0;
+	display:none;
+}
+.tt
+{
+	opcaity:0.0;
+	display:none;
+}
+.ss
+{
+	opcaity:0.0;
+	display:none;
+}
+.insidebar li
+{
+	display:inline;
+}
+.insidebar li .tlinks2
+{
+	font-family:"ksh2";
+	text-decoration:none;
+ width:auto;
+ color:#222222;
+ background-color:#ffbb33;
+ float:left;
+ font-size:100%;
+ text-align:center;
+ padding:5px;
+ min-width: 100px;
+ padding-top:3px;
+}
+.tlinks3
+{
+	font-family:"ksh2";
+	text-decoration:none;
+ width:auto;
+ color:#222222;
+ background-color:#ffbb33;
+ font-size:100%;
+ text-align:center;
+ padding:5px;
+ min-width: 100px;
+ padding-top:3px;
+}
+.tlinks3:hover
+{
+	color:#e8e8e8;
+	background-color:#e57a00;
+}
+.clickedmenu
+{
+	background-color:#e57a00 !important;
+	font-family:"ksh2";
+	text-decoration:none;
+ width:auto;
+ min-width:100px;
+ color:#e8e8e8 !important;
+ float:left;
+ font-size:100%;
+ text-align:center;
+ padding:5px;
+ padding-top:3px;
+}
+.insidebar li .tlinks2:hover
+{
+	color:#e8e8e8;
+	background-color:#e57a00;
+}
+#intro1,#intro2,#intro3,#intro4
+{
+	opacity:0.0;
+	margin-left:-10px;
+}
+.introd
+{
+	display:inline-block;
+	float:left;
+}
+.headertext
+{
+	font-size:75%;
+	font-family:'ksh2';
+}
+.car
+{
+	height:350px;
+	width:1000px;
+	padding:10px;
+	background-color:#ffbb33;
+	
+}
+.carphoto
+{
+	height:350px;
+	width:650px;
+	float:left;
+	display:inline-block;
+}
+.carphotor
+{
+	height:350px;
+	width:650px;
+	float:right;
+	display:inline-block;
+}
+.carblock
+{
+	width:350px;
+	height:350px;
+	color:#1d1d1d;
+	display:inline-block;
+	font-size:110%;
+	text-align:center;
+	background-color:#ffbb33;
+	-moz-transition:all ease 0.5s;
+	-o-transition:all ease 0.5s;
+	-webkit-transition:all ease 0.5s;
+	-ms-transition:all ease 0.5s;
+}
+.car:hover .cartext
+{
+	background-color:#ff8800;
+}
+.carlist1 li
+{
+	display:inline;
+}
+.carlist
+{
+	list-style:none;
+}
+#aboutheader2 , .imptext , .imptext2
+{
+	color:#ff8800;
+}
+.imptext2
+{
+	font-family:'ksh2';
+}
+.image-div
+{
+	height:190px;
+	width:150px;
+	float:left;
+	margin-left:4px;
+	overflow:hidden;
+	border:solid 1px #CCC;
+	border-top:none;
+	background-image:url(textures/frame_bg.png);
+	
+}
+.image-div-image
+{
+	height:160px;
+	margin-top:0px;
+	width:150px;
+	overflow:hidden;
+	
+}
+.image-div-image:hover .cover
+{
+	margin-top:115px;
+}
+.image-div:hover .frame
+{
+	opacity:0.7;
+}
+#ishaan
+{
+	background-image:url(textures/ishaan.png);
+}
+.cover
+{
+	width:150px;
+	margin-top:180px;
+	display:inline-block;
+	height:160px;
+	padding-top:5px;
+	text-align:center;
+	font-size:75%;
+	font-family:'ksh2';
+	color:#efefef;
+	background-image:url("textures/bar.png");
+	transition:all 500ms;
+	-moz-transition:all 500ms; /* Firefox 4 */
+	-webkit-transition:all 500ms;
+}
+.frame
+{
+	opacity:0.0;
+	transition:opacity 500ms;
+	-moz-transition:opacity 500ms; /* Firefox 4 */
+	-webkit-transition:opacity 500ms;
+}
+#social
+{
+	display:inline-block;
+	background-image:url(textures/fb.png);
+}
+#socialm
+{
+	display:inline-block;
+	background-image:url(textures/mail.png);
+	
+}
+.soc
+{
+	
+	height:24px;
+	width:30px;
+	overflow:hidden;
+	float:left;
+	transition:background-position 500ms;
+	-moz-transition:background-position 500ms; /* Firefox 4 */
+	-webkit-transition:background-position 500ms;
+}
+.soc:hover
+{
+	background-position:0px -25px;
+}
+.linkbox
+{
+	height:24px;
+	width:30px;
+}
+.prolinks
+{
+	margin-left:50px;
+}
+.gear1
+{
+	background:url("textures/gear1.jpg");
+	background-color:#fff;
+	background-size:cover;
+}
+.gear2
+{
+	background:url("textures/gear2.jpg");
+	background-color:#fff;
+	background-size:cover;
+}
+#aboutsupport
+{
+	font-size:110%;
+}
+.headertext-car
+{
+	width:250px;
+	border-bottom:solid 1px #1d1d1d;
+	font-size:125%;
+	display:inline-block;
+}
+.rest
+{
+	font-size:80%;
+	display:inline-block;
+	width:100%;
+	color:#000;
+}
+.cardesp
+{
+	color:#1d1d1d;
+	font-size:90%;
+}
+.sponsor
+{
+	float:left;
+	width:225px;
+	height:150px;
+	padding:3px;
+	margin-left:20px;
+	transition:all ease 500ms;
+	-moz-transition:all ease 500ms; /* Firefox 4 */
+	-webkit-transition:all ease 500ms;
+}
+.sponsorimg
+{
+	width:225px;
+	height:150px;
+}
+.sponsorlist
+{
+	width:1200px;
+	height:200px;
+}
+.bullet
+{
+	float:left;
+}
+.achieve
+{
+	float:left;
+	padding:3px;
+}
+.highlight
+{
+	color:#1d1d1d;
+}
+.news
+{
+	font-size:150%;
+	font-family:'ksh1';
+}
+.email
+{
+	transition:all ease 500ms;
+	-moz-transition:all ease 500ms; /* Firefox 4 */
+	-webkit-transition:all ease 500ms;
+}
+.name, .email
+{
+	padding:2px;
+	min-width:210px;
+}
+.email
+{
+	font-family:'ksh2';
+	color:#000;
+}
+.email:hover
+{
+	color:#ff8800;
+}
+.email:hover + .soc2
+{
+	background-position:0px -25px;
+}
+.soc2
+{
+	
+	height:24px;
+	width:30px;
+	overflow:hidden;
+	float:left;
+	transition:background-position 500ms;
+	-moz-transition:background-position 500ms; /* Firefox 4 */
+	-webkit-transition:background-position 500ms;
+}
+.emaillink
+{
+	text-decoration:none;
+	font-family:'ksh2';
+}
+.batches , .elm
+{
+	display:inline-block;
+}
+.insidebar
+{
+	display:inline-block;
+}
+.serieslogo
+{
+	z-index:99999999;
+	position:relative;
+	margin-top:-50px;
+}
+</style>
+<body style="overflow:hidden">
+<div id="overlay"><img src="textures/logo2.png" class="overlay-image"/><br />
+<div class="bigheader2" id="loadheader" >Loading Website Please Wait</div>
+</div>
+<ul class="toplist" id="menu">
+<li><img src="textures/logo2.png" style="display:inline-block;height:55px;float:left;" /></li>
+<li><a href="javascript:void();" class="tlinks" id="homeselect">Home</a></li>
+<li><a href="javascript:void();" class="tlinks" id="teamselect">Team</a></li>
+<li><a href="javascript:void();" class="tlinks" id="sponsorselect">Our Sponsors</a></li>
+<li><a href="javascript:void();" class="tlinks" id="eventselect">Events</a></li>
+<li><a href="javascript:void();" class="tlinks" id="carselect">Cars</a></li>
+<li><a href="javascript:void();" class="tlinks" id="aboutselect">About Us</a></li>
+<li><a href="javascript:void();" class="tlinks" id="alum">Alumini</a></li>
+<li><a href="javascript:void();" class="tlinks" id="contactselect">Contact Us</a></li>
+</ul>
+<div id="panehandler">
+<ul id="panecontainer">
+<li><div class="pane">
+<div class="bigheader">Welcome to Kshatriya's Website</div>
+</div></li>
+
+<li><div class="pane">
+<div class="bigheader" id="eventheader" >Events</div>
+<div class="supportivetext" id="eventsupport" style="font-family:'ksh2';height:auto;"><span class="news">B</span>AJA is an inter-collegiate event organized by SAE to provide SAE student members with a challenging project that involves design, engineering, planning, manufacturing, marketing and racing an <span class="imptext">All Terrain Vehicle</span>. Each team’s goal is to design and build a prototype of a rugged single seat, off-road recreational four-wheel vehicle intended for sale to the non-professional, weekend off-road enthusiast. The competition goals include that the vehicle must be safe, easily maintained and fun to drive. It should be able to negotiate rough terrain in all types of weather without damage.</div><br />
+<br />
+<ul class="insidebar" id="events">
+<li><a href="javascript:void();" class="clickedmenu" id="eventsp">Event Sponsors</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="mediasp">Media Sponsors</a></li>
+</ul><br />
+<br />
+<div class="imgcont">
+<div class="imgsp" id="evnt"></div>
+<div class="imgsp" id="medi"></div>
+</div>
+</div></li>
+
+
+<li><div class="pane gear1">
+<div class="bigheader" id="sponsorheader" >Our Sponsors</div>
+<br />
+<!--
+<ul class="insidebar" id="years2">
+<li><a href="javascript:void();" class="clickedmenu" id="display32">2012</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="display22">2011</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="display12">2010</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="display02">2009</a></li>
+</ul><br />
+-->
+<div class="sponsorlist" id="sponsor1">
+</div><br /><br />
+<div class="sponsorlist" id="sponsor2">
+</div>
+
+</div></li>
+
+
+<li><div class="pane gear1">
+<div class="bigheader" id="teamheader" >Our Team</div>
+<br />
+<br />
+<ul class="insidebar" id="years">
+<li><a href="javascript:void();" class="clickedmenu" id="display3">Brakes</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="display2">CAD</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="display1">Electrical</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="display4">Steering</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="display5">Transmission</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="display6">Suspension</a></li>
+</ul><br />
+<br />
+<div class="teamcontainer">
+<div class="team1" id="electrical">
+</div>
+<!-- CAD -->
+<div class="team1" id="cad">
+</div>
+<!-- BRAKES -->
+<div class="team1" id="brakes">
+</div>
+<!-- STEERING -->
+<div class="team1" id="steering">
+</div>
+<!-- TRANSMISSION -->
+<div class="team1" id="transmission">
+</div>
+<!-- SUSPENSION -->
+<div class="team1" id="suspension">
+</div>
+
+<li><div class="pane">
+<div id="banner-slide">
+<ul class="bjqs">
+        <li><div class="slide1" id="slide1"><div class="slideheaderleft" style="color:#ff8800;">EXPERIENCE ENGINEERING !<div class="headertext" style="color:#f9f9f9;">We are gearing up for BAJA INDIA 2014.</div></div></div></li>
+        <li><div class="slide3" id="slide3"><div class="slideheaderright" style="color:#ff8800;">WE VALUE WORK<br /><div class="headertext" style="font-size:100%;color:#f9f9f9;"><span class="imptext">"</span>Teamwork<span class="imptext">"</span> is the fuel that allows us to attain uncommon results.</div></div></div></li>
+        <li><div class="slide2" id="slide2"><div class="slideheaderleft" style="color:#ff8800;">BAJA SAE INDIA 2013 RESULTS:<br />
+        <div class="headertext" style="font-size:100%;color:#f9f9f9;">Overall <br />
+<span class="imptext">"</span>4th / 261 Teams<span class="imptext">"</span></div></div></div></li>
+</ul>
+<img src="textures/logoseries.png" class="serieslogo" />
+<div style="float:right;margin-top:-25px;display:inline-block;position:relative;background:url('textures/bar.png');padding:2px;"><a style="text-decoration:none;font-family:'ksh2';font-size:90%;color:#efefef;" href="http://www.facebook.com/vasu.mahesh" target="_blank">Developed By Vasu Mahesh</a></div>
+</div>
+</div></li>
+
+
+<li><div class="pane gear2">
+<div class="bigheader" id="carheader" >Our ATVs</div>
+<br />
+<ul class="insidebar" id="carsmenu">
+<li><a href="javascript:void();" class="clickedmenu" id="vajra">Rudra</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="vajra2">Vajra 2.0</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="rudra">Vajra</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="car2009">Vajra - 340</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="car2007">Vajra 2007</a></li>
+</ul>
+<br />
+<br /><br />
+
+<div class="carlist">
+
+<div class="car" id="car1"></div>
+
+<div class="car" id="car2"></div>
+<div class="car" id="car3"></div>
+
+
+<div class="car" id="car4"></div>
+
+
+<div class="car" id="car5"></div>
+
+</div>
+</div>
+</li>
+<li><div class="pane gear2">
+<div class="bigheader" id="alumheader" >Alumini</div>
+<ul class="insidebar" id="alumini">
+<li><a href="javascript:void();" class="clickedmenu" id="b13">Batch '13</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="b12">Batch '12</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="b11">Batch '11</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="b10">Batch '10</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="b09">Batch '09</a></li>
+<li><a href="javascript:void();" class="tlinks2" id="b08">Batch '08</a></li>
+</ul><br /><br />
+<br />
+<div id="batchcont">
+<div class="batches" id="batch13">
+<div class="elm">
+<div class="name">Anish Gupta</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:anishgupta91@gmail.com">anishgupta91@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Apoorv Shinde</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:apoorvshinde2009@vit.ac.in">apoorvshinde2009@vit.ac.in</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Anirudh Gupta</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:anirudhgupta12@gmail.com">anirudhgupta12@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Gopal Singh Rathore</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:rathore.gopal132@gmail.com">rathore.gopal132@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Parth Bhatia</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:parthpbhatia@yahoo.com">parthpbhatia@yahoo.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Ankit Kumar</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:ankit.mailingu@gmail.com">ankit.mailingu@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Subhajeet Rath</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:rathsubhajeet@gmail.com">rathsubhajeet@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Narayan J Bhatia</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:narayan116@yahoo.com">narayan116@yahoo.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Saqib Khan</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:saqibkhan90@gmail.com">saqibkhan90@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Aman Priyan</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:aman.priyan@gmail.com">aman.priyan@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Savyasachi Jha</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:savyasaachi.jha@gmail.com">savyasaachi.jha@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+</div>
+
+<div class="batches" id="batch12">
+
+
+<div class="elm">
+<div class="name">Abhilash Paliwal</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:abhilashpaliwal@gmail.com">abhilashpaliwal@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Sujit Sharan Singh</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:sujitsharan@gmail.com">sujitsharan@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Savio Chopra</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:saviochopra@gmail.com">saviochopra@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Sourabh Nawal</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:nawalsourabh9@gmail.com">nawalsourabh9@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Rajeev Chaudharyl</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:rajeevchaudhary55@gmail.com">rajeevchaudhary55@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Siddhant Nayak</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:sidhhant.cool007@gmail.com">sidhhant.cool007@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Akshat Nautiyal</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:akshat81099@gmail.com">akshat81099@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Nishant Verma</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:nishant.verma.16@gmail.com">nishant.verma.16@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Udit Maheshwari</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:uditmaheshwari89@yahoo.com">uditmaheshwari89@yahoo.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Miheer Vaidya</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:miheervaidya@gmail.com">miheervaidya@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Piyush Srivastava</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:piyushshrivastava123@gmail.com">piyushshrivastava123@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+</div>
+
+<div class="batches" id="batch11">
+
+<div class="elm">
+<div class="name">Vivek Agarwal</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:vivekagarwal.work@gmail.com">vivekagarwal.work@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+
+<div class="elm">
+<div class="name">Nikhil Goyal</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:nikhil.goyal@maruti.co.in">nikhil.goyal@maruti.co.in</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+
+<div class="elm">
+<div class="name">Anand Kumar</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:anand14088@gmail.com">anand14088@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+
+<div class="elm">
+<div class="name">Bhoopendra Singh</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:bhoopendra.vit@gmail.com">bhoopendra.vit@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+
+<div class="elm">
+<div class="name">Rajesh Krishnamoorthy</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:rajesh.kallur@gmail.com">rajesh.kallur@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Vishal Jalan</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:vishaljalan14@gmail.com">vishaljalan14@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+
+<div class="elm">
+<div class="name">Vinayak Gupta</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:vinayakgupta251@gmail.com">vinayakgupta251@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Akshay Kumar</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:axe_spikes@yahoo.co.in">axe_spikes@yahoo.co.in</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Chirag Arora</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:chiragarora10@yahoo.co.in">chiragarora10@yahoo.co.in</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Avikal Maskara</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:scorpionshash@yahoo.com">scorpionshash@yahoo.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Parth Vora</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:pv007rocks@hotmail.com">pv007rocks@hotmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+
+</div>
+
+<div class="batches" id="batch10">
+<div class="elm">
+<div class="name">Nikhil Chugh</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:nik_2006_chugh@yahoo.com">nik_2006_chugh@yahoo.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Ashish Kumawat</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:kumawatashish@yahoo.co.in">kumawatashish@yahoo.co.in</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Mudit Jain</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:mudit_zen03@yahoo.co.in">mudit_zen03@yahoo.co.in</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Ritesh Gaurav</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:riteshgaurav_1987@yahoo.co.in">riteshgaurav_1987@yahoo.co.in</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Saurabh Gupta</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:saurabhgupta.vit@gmail.com">saurabhgupta.vit@gmail.com</a></div><div class="soc2" id="socialm"></div></div>
+</div><br />
+<div class="elm">
+<div class="name">Prerna Gera</div>
+</div><br />
+<div class="elm">
+<div class="name">Ashwin Khanapur</div>
+</div><br />
+<div class="elm">
+<div class="name">Varun Shah</div>
+</div><br />
+ 
+</div>
+
+<div class="batches" id="batch09">
+<div class="elm">
+<div class="name">Vishal Verma</div>
+</div><br />
+<div class="elm">
+<div class="name">Siddharth Padhee</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:sid4every1@gmail.com">sid4every1@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Ishan Goswami</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:ishangoswami@hotmail.com">ishangoswami@hotmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Vipul Bhatia</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:vipulvijaybhatia@gmail.com">vipulvijaybhatia@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Sameer Gupta</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:sameercool87@gmail.com">sameercool87@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">V.M. Sai Murali</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:sam.vit05@gmail.com">sam.vit05@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+
+<div class="elm">
+<div class="name">Udayan Srivastava</div>
+</div><br />
+<div class="elm">
+<div class="name">Rohit Jandhyala</div>
+</div><br />
+<div class="elm">
+<div class="name">Jagan Arani</div>
+</div><br />
+ 
+</div>
+
+<div class="batches" id="batch08">
+<div class="elm">
+<div class="name">Prashant Sethi</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:prashantdelhi05@gmail.com">prashantdelhi05@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Anubhav Nanda</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:anubhav7286@gmail.com">anubhav7286@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Manpreet Singh Chaddha</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:manpreet36@gmail.com">manpreet36@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Archit Chamaria</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:archit.chamaria@gmail.com">archit.chamaria@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Aurav Ghai</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:ghai85@gmail.com">ghai85@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Sunny Sapra</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:sunnysapra02@gmail.com">sunnysapra02@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Ankit Singhal</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:mantraa@gmail.com">mantraa@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Anup Kumar Agarwal</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:anupagarwalvit@gmail.com">anupagarwalvit@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+<div class="elm">
+<div class="name">Rohit Kumar</div>
+<div class="mail"><div class="email"><a class="emaillink" href="mailto:rohit.kkv@gmail.com">rohit.kkv@gmail.com</a></div><div class="soc2" id="socialm"></div></div></div><br />
+
+</div>
+
+</div>
+</div></li>
+
+
+
+<li><div class="pane gear2">
+<div class="bigheader" id="aboutheader" >Team Kshatriya</div><br />
+<div class="supportivetext" id="aboutsupport" style="font-family:'ksh2'"><span class="news">T</span>eam <span class="news">K</span>shatriya was formed in the year 2006 , by B.Tech Mechanical Engineering students of VIT.<br />
+<br />
+
+
+We started with the objective of bringing together those brains which are diligently working on a myriad of inventive technologies, and to provide them with a forum for free exchange of ideas and expose them to the latest innovations in terms of automotive engineering.We are proud to have participated in <br />
+<br />
+
+<span class="imptext">
+BAJA SAE INDIA 2013<br />
+BAJA SAE INDIA 2012<br />
+BAJA SAE INDIA 2011<br />
+BAJA SOUTH AFRICA 2009<br />
+BAJA INDIA 2009<br />
+BAJA INDIA 2007<br />
+BAJA USA 2007<br />
+</span><br />
+<br />
+
+
+The most important part is we have knowledge and <span class="imptext">"</span>lessons learnt from mistakes<span class="imptext">"</span> passed on from senior teams to junior teams. This is what makes us unique!
+<br />
+<br />
+
+Today, we are gearing up for BAJA INDIA 2014 and looking forward to the challenge ahead!
+<br />
+
+With us,
+<span class="imptext" style="font-size:120%;font-family:'ksh1'">EXPERIENCE ENGINEERING!</span></div><br />
+</div></li>
+<li><div class="pane gear1">
+<div class="bigheader" id="contactheader" >Contact Info</div>
+<div class="supportivetext" id="contactsupport" style="font-family:'ksh2';width:100%;">
+
+</div>
+</div></li>
+</ul>
+</div>
+</body>
+</html>
